@@ -2,7 +2,7 @@
   "site": {
     "title": "Sotomayor Consulting Ecuador",
     "base_url": "https://sotomayor-consulting.github.io",
-    "base_path": "https://sotomayor-consulting.github.io/Ecuador/",
+    "base_path": "/Ecuador",
     "trailing_slash": false,
     "favicon": "/images/avatar-SCI-iso.png",
     "logo": "/images/Logo_negro-redesing.png",

@@ -8,6 +8,7 @@ import { getListPage, getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import { sortByDate } from "@/lib/utils/sortFunctions";
 import { markdownify } from "@/lib/utils/textConverter";
+import { withBasePath } from "@/lib/utils/url";
 import type { BlogIndex } from "@/types";
 
 // Page-level content from content collection
@@ -75,7 +76,7 @@ const latestPosts = allPosts.filter((p) => p.id !== featuredPost.id);
               authorName={featuredPost.data.author}
               date={dateFormat(featuredPost.data.date ?? new Date())}
               readTime={featuredPost.data.read_time ?? "5 min read"}
-              href={`/blog/${featuredPost.id}`}
+              href={withBasePath(`/blog/${featuredPost.id}`)}
             />
           </div>
 
@@ -108,7 +109,7 @@ const latestPosts = allPosts.filter((p) => p.id !== featuredPost.id);
                 }
                 authorName={post.data.author}
                 date={dateFormat(post.data.date ?? new Date())}
-                href={`/blog/${post.id}`}
+                href={withBasePath(`/blog/${post.id}`)}
               />
             ))}
           </div>

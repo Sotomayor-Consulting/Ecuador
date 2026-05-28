@@ -6,6 +6,7 @@ import ImageMod from "@/layouts/components/ImageMod.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import dateFormat from "@/lib/utils/dateFormat";
 import { markdownify } from "@/lib/utils/textConverter";
+import { withBasePath } from "@/lib/utils/url";
 import { render } from "astro:content";
 
 export async function getStaticPaths() {
@@ -138,7 +139,7 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
                 }
                 authorName={relPost.data.author}
                 date={dateFormat(relPost.data.date ?? new Date())}
-                href={`/blog/${relPost.id}`}
+                href={withBasePath(`/blog/${relPost.id}`)}
               />
             ))}
           </div>
