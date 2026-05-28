@@ -2,15 +2,15 @@
   "main": [
     {
       "name": "Servicios",
-      "url": "/services"
+      "url": "/Ecuador/services"
     },
     {
       "name": "Nosotros",
-      "url": "/about"
+      "url": "/Ecuador/about"
     },
     {
       "name": "Contáctanos",
-      "url": "/contact"
+      "url": "/Ecuador/contact"
     },
     {
       "name": "Blog",
@@ -23,11 +23,11 @@
   "footer_primary": [
     {
       "name": "Inicio",
-      "url": "/"
+      "url": "/Ecuador/"
     },
     {
       "name": "Nosotros",
-      "url": "/about"
+      "url": "/Ecuador/about"
     },
     {
       "name": "Contáctanos",
@@ -35,11 +35,11 @@
     },
     {
       "name": "Servicios",
-      "url": "/services"
+      "url": "/Ecuador/services"
     },
     {
       "name": "blog",
-      "url": "/blog"
+      "url": "/Ecuador/blog"
     }
   ],
   "footer_resource": [
@@ -56,11 +56,11 @@
   "footer_legal": [
     {
       "name": "Politica de Privacidad",
-      "url": "/privacy-policy"
+      "url": "/Ecuador/privacy-policy"
     },
     {
       "name": "Terminos y condiciones",
-      "url": "/term-and-condition"
+      "url": "/Ecuador/term-and-condition"
     }
   ]
 }
