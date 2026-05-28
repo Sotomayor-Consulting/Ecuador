@@ -15,10 +15,11 @@ const { image, logo, company, badge, title, description, stats, href } =
 ---
 
 <div class="grid lg:grid-cols-2 gap-4">
-  <div class="relative overflow-hidden rounded-2xl min-h-80 bg-light">
+  <div class="relative overflow-hidden rounded-2xl min-h-80 bg-black">
     <ImageMod
       src={image}
       alt={title}
+      loading="lazy"
       class="absolute inset-0 w-full h-full object-cover"
     />
     <div
@@ -29,7 +30,7 @@ const { image, logo, company, badge, title, description, stats, href } =
       <ImageMod src={logo} alt={company} class="h-8 mb-4 brightness-0 invert" />
     </div>
   </div>
-  <div class="p-8 xl:p-10 rounded-2xl bg-light border border-border">
+  <div class="p-8 xl:p-10 rounded-2xl bg-black border border-border">
     <div
       class="px-4 py-1.5 bg-white max-w-min text-dark rounded-lg text-sm font-medium mb-12"
     >
@@ -41,7 +42,7 @@ const { image, logo, company, badge, title, description, stats, href } =
       <a href={href}>{title}</a>
     </h3>
     <p class="text-text-dark text-lg">{description}</p>
-    {
+    <!-- {
       stats && stats.length > 0 && (
         <div class="flex items-center justify-between gap-8 mt-20">
           {stats.slice(0, 2).map((stat) => (
@@ -54,6 +55,6 @@ const { image, logo, company, badge, title, description, stats, href } =
           ))}
         </div>
       )
-    }
+    } -->
   </div>
 </div>

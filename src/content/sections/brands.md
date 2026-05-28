@@ -1,6 +1,6 @@
 ---
 enable: true
-title: Trusted by <strong class="text-primary">10,000+</strong> local businesses to scale their bookings and growth automatically.
+title: Más de una década respaldando el crecimiento y la seguridad de empresas líderes.
 images:
   - src: "/images/brands/dropbox-logo-svg-150px.svg"
     alt: "Dropbox"

@@ -1,7 +1,6 @@
 import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
-import vercel from "@astrojs/vercel";
 import tailwindcss from "@tailwindcss/vite";
 import AutoImport from "astro-auto-import";
 import { defineConfig, fontProviders } from "astro/config";
@@ -10,6 +9,7 @@ import remarkToc from "remark-toc";
 import sharp from "sharp";
 import config from "./src/config/config.json";
 import theme from "./src/config/theme.json";
+import icon from "astro-icon";
 
 // Helper to parse font string format: "FontName:wght@400;500;600;700"
 function parseFontString(fontStr) {
@@ -49,29 +49,26 @@ const fontsConfig = Object.entries(theme.fonts.font_family)
 
 // https://astro.build/config
 export default defineConfig({
-  adapter: vercel(),
+  output: "static",
   site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
   base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: { service: sharp() },
   vite: { plugins: [tailwindcss()] },
   fonts: fontsConfig,
-  integrations: [
-    react(),
-    sitemap(),
-    AutoImport({
-      imports: [
-        "@/shortcodes/Button",
-        "@/shortcodes/Accordion",
-        "@/shortcodes/Notice",
-        "@/shortcodes/Video",
-        // "@/shortcodes/Youtube",
-        "@/shortcodes/Tabs",
-        "@/shortcodes/Tab",
-      ],
-    }),
-    mdx(),
-  ],
+  integrations: [react(), sitemap(), AutoImport({
+    imports: [
+      "@/shortcodes/Button",
+      "@/shortcodes/Accordion",
+      "@/shortcodes/Notice",
+      "@/shortcodes/Video",
+      // "@/shortcodes/Youtube",
+      "@/shortcodes/Tabs",
+      "@/shortcodes/Tab",
+    ],
+  }), mdx(), icon({
+      iconDir: "src/assets/icons",
+    })],
   markdown: {
     remarkPlugins: [remarkToc, [remarkCollapse, { test: "Table of contents" }]],
     shikiConfig: { theme: "one-dark-pro", wrap: true },

@@ -58,6 +58,7 @@ export interface SocialType {
 export interface FeatureItem {
   logo: string;
   title: string;
+  description: string;
   is_starred: boolean;
 }
 

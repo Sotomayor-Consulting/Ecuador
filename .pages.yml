@@ -1,0 +1,1131 @@
+media:
+  - name: public
+    label: Public assets
+    input: public
+    output: /
+    rename: false
+
+content:
+  - name: site_content
+    label: Contenido web
+    type: group
+    items:
+      - name: homepage
+        label: Inicio
+        type: file
+        path: src/content/homepage/-index.md
+        format: yaml-frontmatter
+        fields:
+          - name: banner
+            label: Banner
+            type: object
+            fields:
+              - name: title
+                type: text
+              - name: content
+                type: text
+              - name: button_primary
+                label: Boton principal
+                type: object
+                fields:
+                  - name: enable
+                    type: boolean
+                  - name: label
+                    type: string
+                  - name: link
+                    type: string
+              - name: button_secondary
+                label: Boton secundario
+                type: object
+                fields:
+                  - name: enable
+                    type: boolean
+                  - name: label
+                    type: string
+                  - name: link
+                    type: string
+          - name: main_features
+            label: Bloque principal
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: content
+                type: text
+              - name: items
+                type: string
+                list: true
+          - name: value_props
+            label: Propuesta de valor
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: content
+                type: text
+              - name: items
+                label: Tarjetas
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: logo
+                    type: image
+                    options:
+                      media: public
+                      path: images
+                  - name: title
+                    type: string
+                  - name: list
+                    label: Lista
+                    type: string
+                    list: true
+          - name: our_features
+            label: Servicios destacados
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: content
+                type: text
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: logo
+                    type: string
+                  - name: title
+                    type: string
+                  - name: description
+                    type: text
+                  - name: is_starred
+                    type: boolean
+          - name: testimonial_quote
+            label: Cita destacada
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: quote
+                type: text
+          - name: single_testimonial
+            label: Testimonio principal
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: stats
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - name: value
+                    type: string
+                  - name: label
+                    type: string
+              - name: testimonial
+                type: object
+                fields:
+                  - name: quote
+                    type: text
+                  - name: avatar
+                    type: image
+                    options:
+                      media: public
+                      path: images
+                  - name: name
+                    type: string
+                  - name: company
+                    type: string
+          - name: growth_process
+            label: Proceso
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: logo
+                    type: image
+                    options:
+                      media: public
+                      path: images
+                  - name: title
+                    type: string
+                  - name: content
+                    type: text
+              - name: button
+                type: object
+                fields:
+                  - name: enable
+                    type: boolean
+                  - name: label
+                    type: string
+                  - name: link
+                    type: string
+          - name: integrations
+            label: Integraciones
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{alt}"
+                fields:
+                  - name: image
+                    type: image
+                    options:
+                      media: public
+                      path: images/integrations
+                  - name: alt
+                    type: string
+          - name: lead_generation
+            label: Lead magnet
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: subtitle
+                type: text
+              - name: content
+                type: text
+              - name: list
+                label: Beneficios
+                type: string
+                list: true
+              - name: image
+                type: image
+                options:
+                  media: public
+                  path: images
+              - name: button
+                type: object
+                fields:
+                  - name: enable
+                    type: boolean
+                  - name: label
+                    type: string
+                  - name: link
+                    type: string
+          - name: pricing
+            label: Pricing teaser
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: content
+                type: text
+
+      - name: about_page
+        label: Nosotros
+        type: file
+        path: src/content/about/-index.md
+        format: yaml-frontmatter
+        fields:
+          - name: title
+            type: string
+          - name: meta_title
+            type: string
+          - name: description
+            type: text
+          - name: image
+            type: image
+            options:
+              media: public
+              path: images
+          - name: draft
+            type: boolean
+          - name: page_header
+            type: object
+            fields:
+              - name: title
+                type: text
+              - name: subtitle
+                type: text
+              - name: image
+                type: image
+                options:
+                  media: public
+                  path: images
+          - name: stats
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - name: value
+                    type: string
+                  - name: label
+                    type: string
+          - name: our_team
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: badge
+                type: string
+              - name: title
+                type: text
+              - name: members
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: image
+                    type: image
+                    options:
+                      media: public
+                      path: images/peoples
+                  - name: name
+                    type: string
+                  - name: role
+                    type: string
+          - name: core_values
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: badge
+                type: string
+              - name: title
+                type: text
+              - name: subtitle
+                type: text
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: logo
+                    type: image
+                    options:
+                      media: public
+                      path: images
+                  - name: title
+                    type: string
+                  - name: is_starred
+                    type: boolean
+
+      - name: contact_page
+        label: Contacto
+        type: file
+        path: src/content/contact/-index.md
+        format: yaml-frontmatter
+        fields:
+          - name: title
+            type: string
+          - name: meta_title
+            type: string
+          - name: description
+            type: text
+          - name: image
+            type: image
+            options:
+              media: public
+              path: images
+          - name: draft
+            type: boolean
+          - name: page_header
+            type: object
+            fields:
+              - name: title
+                type: text
+              - name: subtitle
+                type: text
+          - name: contact_info
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: type
+                    type: string
+                  - name: title
+                    type: string
+                  - name: detail
+                    type: text
+                  - name: link
+                    type: string
+                  - name: icon
+                    type: string
+
+      - name: legal_pages
+        label: Paginas legales
+        type: collection
+        path: src/content/pages
+        format: yaml-frontmatter
+        subfolders: false
+        exclude:
+          - elements.mdx
+        view:
+          fields: [title, meta_title, draft]
+          primary: title
+          search: [title, description, meta_title]
+        fields:
+          - name: title
+            type: string
+          - name: meta_title
+            type: string
+          - name: description
+            type: text
+          - name: image
+            type: image
+            options:
+              media: public
+              path: images
+          - name: draft
+            type: boolean
+          - name: body
+            type: rich-text
+
+      - name: blog_index
+        label: Blog portada
+        type: file
+        path: src/content/blog/-index.md
+        format: yaml-frontmatter
+        fields:
+          - name: title
+            type: string
+          - name: meta_title
+            type: string
+          - name: description
+            type: text
+          - name: image
+            type: image
+            options:
+              media: public
+              path: images
+          - name: draft
+            type: boolean
+          - name: page_header
+            type: object
+            fields:
+              - name: title
+                type: text
+              - name: featured_post
+                type: string
+          - name: featured_post
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+          - name: latest_posts
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+
+      - name: blog_posts
+        label: Blog
+        type: collection
+        path: src/content/blog
+        format: yaml-frontmatter
+        subfolders: false
+        exclude:
+          - -index.md
+        view:
+          fields: [title, date, author, draft]
+          primary: title
+          sort: [date, title]
+          search: [title, description, author, tag]
+          default:
+            sort: date
+            order: desc
+        fields:
+          - name: title
+            type: string
+          - name: meta_title
+            type: string
+          - name: description
+            type: text
+          - name: date
+            type: date
+          - name: image
+            type: image
+            options:
+              media: public
+              path: images/blog
+          - name: author
+            type: string
+          - name: author_image
+            type: image
+            options:
+              media: public
+              path: images/blog
+          - name: tag
+            type: string
+          - name: read_time
+            type: string
+          - name: categories
+            type: string
+            list: true
+          - name: tags
+            type: string
+            list: true
+          - name: draft
+            type: boolean
+          - name: body
+            type: rich-text
+
+      - name: case_study_index
+        label: Servicios portada
+        type: file
+        path: src/content/case-study/-index.md
+        format: yaml-frontmatter
+        fields:
+          - name: title
+            type: string
+          - name: meta_title
+            type: string
+          - name: description
+            type: text
+          - name: image
+            type: image
+            options:
+              media: public
+              path: images
+          - name: draft
+            type: boolean
+          - name: page_header
+            type: object
+            fields:
+              - name: badge
+                type: string
+              - name: title
+                type: text
+              - name: content
+                type: text
+
+      - name: case_studies
+        label: Servicios individuales
+        type: collection
+        path: src/content/case-study
+        format: yaml-frontmatter
+        subfolders: false
+        exclude:
+          - -index.md
+        view:
+          fields: [title, company, date, draft]
+          primary: title
+          sort: [date, title, company]
+          search: [title, company, description, badge]
+          default:
+            sort: date
+            order: desc
+        fields:
+          - name: title
+            type: string
+          - name: meta_title
+            type: string
+          - name: description
+            type: text
+          - name: date
+            type: date
+          - name: draft
+            type: boolean
+          - name: image
+            type: image
+            options:
+              media: public
+              path: images/services
+          - name: thumbnail
+            type: image
+            options:
+              media: public
+              path: images/services
+          - name: badge
+            type: string
+          - name: logo
+            type: image
+            options:
+              media: public
+              path: images
+          - name: company
+            type: string
+          - name: stats
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - name: value
+                type: string
+              - name: label
+                type: string
+          - name: client_info
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{label}"
+            fields:
+              - name: icon
+                type: string
+              - name: label
+                type: string
+              - name: value
+                type: string
+          - name: overview
+            type: object
+            fields:
+              - name: image
+                type: image
+                options:
+                  media: public
+                  path: images/services
+              - name: title
+                type: text
+              - name: content
+                type: text
+          - name: challenges
+            type: object
+            fields:
+              - name: title
+                type: text
+              - name: content
+                type: text
+              - name: quote
+                type: text
+              - name: quote_author
+                type: object
+                fields:
+                  - name: name
+                    type: string
+                  - name: designation
+                    type: string
+                  - name: avatar
+                    type: image
+                    options:
+                      media: public
+                      path: images
+          - name: solution
+            type: object
+            fields:
+              - name: image
+                type: image
+                options:
+                  media: public
+                  path: images/services
+              - name: title
+                type: text
+              - name: content
+                type: text
+              - name: items
+                type: string
+                list: true
+          - name: results
+            type: object
+            fields:
+              - name: title
+                type: text
+              - name: content
+                type: text
+              - name: metrics
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{label}"
+                fields:
+                  - name: value
+                    type: string
+                  - name: label
+                    type: string
+
+      - name: reusable_sections
+        label: Secciones reutilizables
+        type: group
+        items:
+          - name: section_call_to_action
+            label: Call to action
+            type: file
+            path: src/content/sections/call-to-action.md
+            format: yaml-frontmatter
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: description
+                type: text
+              - name: button
+                type: object
+                fields:
+                  - name: enable
+                    type: boolean
+                  - name: label
+                    type: string
+                  - name: link
+                    type: string
+          - name: section_faq
+            label: FAQ
+            type: file
+            path: src/content/sections/faq.md
+            format: yaml-frontmatter
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: description
+                type: text
+              - name: button
+                type: object
+                fields:
+                  - name: enable
+                    type: boolean
+                  - name: label
+                    type: string
+                  - name: link
+                    type: string
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{question}"
+                fields:
+                  - name: question
+                    type: text
+                  - name: answer
+                    type: text
+          - name: section_testimonial
+            label: Testimonials
+            type: file
+            path: src/content/sections/testimonial.md
+            format: yaml-frontmatter
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: testimonials
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{name}"
+                fields:
+                  - name: name
+                    type: string
+                  - name: designation
+                    type: string
+                  - name: poster
+                    type: image
+                    options:
+                      media: public
+                      path: images/testimonials
+                  - name: content
+                    type: text
+                  - name: video
+                    type: file
+                    options:
+                      media: public
+                      path: .
+          - name: section_our_story
+            label: Our story
+            type: file
+            path: src/content/sections/our-story.md
+            format: yaml-frontmatter
+            fields:
+              - name: enable
+                type: boolean
+              - name: badge
+                type: string
+              - name: title
+                type: text
+              - name: ceo
+                type: object
+                fields:
+                  - name: image
+                    type: image
+                    options:
+                      media: public
+                      path: images
+                  - name: name
+                    type: string
+                  - name: role
+                    type: string
+              - name: letter
+                type: text
+              - name: letter_points_title
+                type: text
+              - name: letter_points
+                type: string
+                list: true
+              - name: closing_content
+                type: text
+              - name: button
+                type: object
+                fields:
+                  - name: enable
+                    type: boolean
+                  - name: label
+                    type: string
+                  - name: link
+                    type: string
+          - name: section_brands
+            label: Brands
+            type: file
+            path: src/content/sections/brands.md
+            format: yaml-frontmatter
+            fields:
+              - name: enable
+                type: boolean
+              - name: title
+                type: text
+              - name: images
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{alt}"
+                fields:
+                  - name: src
+                    type: image
+                    options:
+                      media: public
+                      path: images/brands
+                  - name: alt
+                    type: string
+          - name: section_business_needs
+            label: Business needs
+            type: file
+            path: src/content/sections/business-needs.md
+            format: yaml-frontmatter
+            fields:
+              - name: enable
+                type: boolean
+              - name: badge
+                type: string
+              - name: title
+                type: text
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{number} - {title}"
+                fields:
+                  - name: image
+                    type: image
+                    options:
+                      media: public
+                      path: images
+                  - name: number
+                    type: string
+                  - name: title
+                    type: string
+                  - name: content
+                    type: text
+          - name: section_comparison_row
+            label: Comparison row
+            type: file
+            path: src/content/sections/comparison-row.md
+            format: yaml-frontmatter
+            fields:
+              - name: enable
+                type: boolean
+              - name: badge
+                type: string
+              - name: title
+                type: text
+              - name: price_suffix
+                type: string
+              - name: items
+                type: object
+                list:
+                  collapsible:
+                    collapsed: true
+                    summary: "{title}"
+                fields:
+                  - name: title
+                    type: string
+                  - name: price
+                    type: string
+                  - name: images
+                    type: image
+                    list: true
+                    options:
+                      media: public
+                      path: images/platforms-logo
+
+  - name: site_config
+    label: Configuracion
+    type: group
+    items:
+      - name: config_json
+        label: Config general
+        type: file
+        path: src/config/config.json
+        format: json
+        fields:
+          - name: site
+            type: object
+            fields:
+              - name: title
+                type: string
+              - name: base_url
+                type: string
+              - name: base_path
+                type: string
+              - name: trailing_slash
+                type: boolean
+              - name: favicon
+                type: image
+                options:
+                  media: public
+                  path: images
+              - name: logo
+                type: image
+                options:
+                  media: public
+                  path: images
+              - name: logo_width
+                type: string
+              - name: logo_height
+                type: string
+              - name: logo_text
+                type: string
+          - name: settings
+            type: object
+            fields:
+              - name: sticky_header
+                type: boolean
+          - name: params
+            type: object
+            fields:
+              - name: contact_form_action
+                type: string
+              - name: checklist_form_action
+                type: string
+              - name: apply_form_action
+                type: string
+              - name: copyright
+                type: text
+              - name: footer_tagline
+                type: text
+              - name: footer_email
+                type: string
+              - name: footer_phone
+                type: string
+          - name: navigation_button
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: label
+                type: string
+              - name: link
+                type: string
+          - name: google_tag_manager
+            type: object
+            fields:
+              - name: enable
+                type: boolean
+              - name: gtm_id
+                type: string
+          - name: metadata
+            type: object
+            fields:
+              - name: meta_author
+                type: string
+              - name: meta_image
+                type: image
+                options:
+                  media: public
+                  path: images
+              - name: meta_description
+                type: text
+
+      - name: menu_json
+        label: Menu
+        type: file
+        path: src/config/menu.json
+        format: json
+        fields:
+          - name: main
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: url
+                type: string
+          - name: footer_col_1_title
+            type: string
+          - name: footer_col_2_title
+            type: string
+          - name: footer_col_3_title
+            type: string
+          - name: footer_primary
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: url
+                type: string
+          - name: footer_resource
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: url
+                type: string
+          - name: footer_legal
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: url
+                type: string
+
+      - name: social_json
+        label: Redes sociales
+        type: file
+        path: src/config/social.json
+        format: json
+        fields:
+          - name: main
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                type: string
+              - name: icon
+                type: string
+              - name: link
+                type: string
+
+      - name: theme_json
+        label: Tema
+        type: file
+        path: src/config/theme.json
+        format: json
+        fields:
+          - name: colors
+            type: object
+            fields:
+              - name: default
+                type: object
+                fields:
+                  - name: theme_color
+                    type: object
+                    fields:
+                      - name: primary
+                        type: string
+                      - name: primary_light
+                        type: string
+                      - name: secondary
+                        type: string
+                      - name: body
+                        type: string
+                      - name: border
+                        type: string
+                      - name: light
+                        type: string
+                      - name: dark
+                        type: string
+                  - name: text_color
+                    type: object
+                    fields:
+                      - name: text
+                        type: string
+                      - name: text_dark
+                        type: string
+                      - name: text_light
+                        type: string
+          - name: fonts
+            type: object
+            fields:
+              - name: font_family
+                type: object
+                fields:
+                  - name: primary
+                    type: string
+                  - name: primary_type
+                    type: string
+                  - name: secondary
+                    type: string
+                  - name: secondary_type
+                    type: string
+              - name: font_size
+                type: object
+                fields:
+                  - name: base
+                    type: string
+                  - name: scale
+                    type: string
+
+settings:
+  content:
+    merge: false

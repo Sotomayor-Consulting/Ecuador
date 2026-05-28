@@ -1,131 +1,160 @@
 ---
 banner:
-  title: "The All-In-One Growth Software for <strong>Local Business Owners</strong>"
-  content: "The complete automated system designed to capture more leads, follow up instantly, and grow your local business - all in one place."
+  title: "Consultoría Especializada en <br><strong>Finanzas, Impuestos y Planificación Patrimonial</strong>"
+  content: "Soluciones integrales de principio a fin: desde la contraloría laboral y tributaria hasta el Softlanding internacional e inversiones en Real Estate. Su tranquilidad empresarial y familiar en un solo lugar."
   button_primary:
     enable: true
-    label: "Start Your 14-day Free Trial"
+    label: "Conoce nuestros servicios"
     link: "/pricing"
   button_secondary:
     enable: true
-    label: "Book a Demo"
+    label: "Agenda una reunion"
     link: "/contact"
 
 main_features:
   enable: true
-  title: "Are you losing real customers to the <strong>Follow-up Gap?</strong>"
-  content: "Stop wasting money on marketing if you can't respond fast enough. Our system ensures every lead gets immediate attention."
+  title: "¿Está frenando el crecimiento de su empresa debido a la <strong>Brecha de Control Operativo y Legal?</strong></strong>"
+  content: "No permita que las complejidades normativas, los riesgos laborales o la ineficiencia fiscal detengan su evolución. Nuestro equipo de expertos unifica soluciones estratégicas locales e internacionales, asegurando que toda su operación y patrimonio estén blindados, en total cumplimiento y financieramente óptimos. Descubra nuestras áreas de especialización:"
   items:
-    - "Wasted Ad Spend"
-    - "Expensive 'Franken-stack' of tools"
-    - "Scattered Customer Data"
-    - "Missed Calls Costing Thousands"
-    - "Lost Leads to Competitors"
-    - "Slow Response Times"
+    - "Consultoría Financiera y Planes de Negocio"
+    - "Planificación Fiscal e Impuestos Internacionales"
+    - "Gestión Patrimonial y Wealth Management"
+    - "Asesoría Societaria y Legal Corporativa"
+    - "Defensa Tributaria y Litigio Laboral"
+    - "Contraloría, Debida Diligencia y Cumplimiento (Compliance)"
 
 value_props:
   enable: true
-  title: "Replace Your Clunky Tools With A <strong>Smart, All-In-One System</strong>"
-  content: "Log in to a single powerful dashboard to manage everything seamlessly."
+  title: "Sustituya la asesoría fragmentada por un <strong>Respaldo Corporativo Integral</strong>"
+  content: "Tome el control absoluto de su empresa y patrimonio sin lidiar con múltiples proveedores. Con una sola firma aliada, usted obtiene la claridad, los informes oportunos y la seguridad jurídica que su negocio necesita para prosperar."
   items:
-    - logo: "/images/value-proposition/values-icon-1.svg"
-      title: "Automated Customer Follow-Up"
-      list:
-        - "Missed Call Auto-Responder"
-        - "24/7 Appointment Scheduler"
-        - "Instant SMS & Email Follow-Up"
-    - logo: "/images/value-proposition/values-icon-2.svg"
-      title: "Smart Customer Database"
-      list:
-        - "Unified Lead Inbox"
-        - "Smart Pipeline Manager"
-        - "Client Notes & History"
-    - logo: "/images/value-proposition/values-icon-3.svg"
-      title: "Autopilot Review Generator"
-      list:
-        - "Automated Review Requests"
-        - "Google & Facebook Integration"
-        - "Reputation Tracking"
-    - logo: "/images/value-proposition/values-icon-4.svg"
-      title: "High-Converting Websites"
-      list:
-        - "Drag-and-Drop Landing Pages"
-        - "Lead Capture Forms"
-        - "Web Chat Widgets"
+  - logo: "/images/value-proposition/values-icon-1.svg"
+    title: "Estrategia Fiscal y Tributaria"
+    list:
+      - "Optimización fiscal transfronteriza y aplicación de CDIs"
+      - "Planificación estratégica y consultas tributarias"
+      - "Gestión de devoluciones de impuestos (IVA, Impuesto a la Renta, ISD)"
+      - "Contraloría tributaria mensual y auditorías preventivas"
+  
+  - logo: "/images/value-proposition/values-icon-2.svg"
+    title: "Asesoría Legal y Corporativa"
+    list:
+      - "Derecho societario general y estructuras corporativas"
+      - "Cesiones de acciones, disoluciones y liquidaciones"
+      - "Asesoría laboral integral y contratos de trabajo"
+      - "Contraloría laboral mensual y controles de debida diligencia"
+  
+  - logo: "/images/value-proposition/values-icon-3.svg"
+    title: "Softlanding y Expansión Global"
+    list:
+      - "Planes de negocio para expansión internacional"
+      - "Softlanding corporativo y servicios migratorios"
+      - "Incorporación de empresas operativas, Holdings y Trusts"
+      - "Asesoría legal multijurisdiccional y convenios internacionales"
+  
+  - logo: "/images/value-proposition/values-icon-4.svg"
+    title: "Protección Patrimonial y Wealth Management"
+    list:
+      - "Planificación hereditaria y sucesiones seguras"
+      - "Gestión integral del patrimonio familiar"
+      - "Inversiones inmobiliarias en Florida (Real Estate EEUU)"
+      - "Capacitaciones corporativas y actualización normativa"
 
 our_features:
   enable: true
-  title: "Everything You Need To Put Growth On <strong>Autopilot</strong>"
-  content: "From capturing the very first click to securing a 5-star review, we've got you covered."
+  title: "Todo lo que su empresa necesita para asegurar un <strong>Crecimiento Sólido y Sostenible</strong>"
+  content: "Desde la constitución legal de su empresa hasta su consolidación y expansión internacional, nos encargamos de proteger cada etapa de su camino empresarial."
   items:
-    - logo: "/images/features-menu-icon.svg"
-      title: "Automated Customer Follow-up"
-      is_starred: false
-    - logo: "/images/features-menu-icon.svg"
-      title: "Autopilot Review Generator"
-      is_starred: false
-    - logo: "/images/features-menu-icon.svg"
-      title: "Missed Call Auto-Responder"
-      is_starred: false
-    - logo: "/images/features-menu-icon.svg"
-      title: "24/7 Appointment Scheduler"
-      is_starred: false
-    - logo: "/images/features-menu-icon.svg"
-      title: "Unified Lead Inbox"
-      is_starred: true
-    - logo: "/images/features-menu-icon.svg"
-      title: "Smart Customer Database"
-      is_starred: false
-    - logo: "/images/features-menu-icon.svg"
-      title: "High-Converting Websites"
-      is_starred: false
-    - logo: "/images/features-menu-icon.svg"
-      title: "Drag & Drop Forms"
-      is_starred: false
-    - logo: "/images/features-menu-icon.svg"
-      title: "Automated Text Campaigns"
-      is_starred: false
+  # --- BLOQUE TRIBUTARIO (Ingreso Recurrente y Consultoría Alta) ---
+  - logo: "material-symbols:public"
+    title: "Optimización Fiscal Transfronteriza y CDIs"
+    description: "Mitigación legal de la doble imposición para estructurar operaciones internacionales eficientes."
+    is_starred: true
+
+  - logo: "material-symbols:fact-check-outline"
+    title: "Contraloría Tributaria Mensual"
+    description: "Supervisión y auditoría preventiva recurrente para garantizar el cero riesgo ante el SRI."
+    is_starred: true
+
+  - logo: "material-symbols:calendar-apps-script-outline"
+    title: "Planificación Fiscal Estratégica"
+    description: "Diseño de estructuras impositivas a medida para reducir legalmente la carga tributaria anual."
+    is_starred: false
+
+  # --- BLOQUE CORPORATIVO Y ESTRATÉGICO GLOBAL (Márgenes muy altos) ---
+  - logo: "material-symbols:flight-land"
+    title: "Softlanding Corporativo y Migratorio"
+    description: "Acompañamiento integral para el despliegue legal, operativo y residencial en nuevos mercados."
+    is_starred: true
+
+  - logo: "material-symbols:account-tree-outline"
+    title: "Constitución de Holdings, Trusts y Operativas"
+    description: "Creación de estructuras jurídicas internacionales avanzadas para la diversificación de riesgos."
+    is_starred: false
+
+  - logo: "material-symbols:real-estate-agent-outline"
+    title: "Inversiones Inmobiliarias en Florida (Real Estate)"
+    description: "Asesoría fiscal y legal para la adquisición segura de activos raíces en Estados Unidos."
+    is_starred: false
+
+  # --- BLOQUE PATRIMONIAL Y DEFENSA LEGAL (Servicios Críticos) ---
+  - logo: "material-symbols:family-home-outline"
+    title: "Planificación Hereditaria y Sucesoria"
+    description: "Protocolos legales para la transición ordenada y segura del patrimonio familiar."
+    is_starred: false
+
+  - logo: "material-symbols:gavel"
+    title: "Defensa y Representación en Juicios Tributarios"
+    description: "Patrocinio legal estratégico ante glosas, actas de determinación y disputas contra el SRI."
+    is_starred: false
+
+  - logo: "material-symbols:badge-outline"
+    title: "Contraloría Laboral Mensual"
+    description: "Auditoría periódica de nómina y contratos para blindar a la empresa frente a contingencias del MDT."
+    is_starred: false
 
 testimonial_quote:
   enable: true
-  title: "We know you didn't start your local business to become a full-time <strong>Software Engineer</strong>"
-  quote: "Before this system, I was losing half my leads simply because I couldn't get to my phone fast enough while on jobs. Now, the system handles the follow-up for me, and I've seen a 300% jump in bookings."
+  title: "Usted lidere el crecimiento de su empresa; <strong>nosotros nos encargamos de blindarlo.</strong>"
+  quote: "Antes de estructurar nuestro holding corporativo y la contraloría fiscal con la firma, operábamos bajo contingencias legales permanentes y fugas impositivas que devoraban el margen anual. Hoy tenemos el control absoluto de los riesgos y la tranquilidad de expandirnos internacionalmente con un respaldo impecable."
 
 single_testimonial:
   enable: true
   stats:
-    - value: "10,000+"
-      label: "Lead Captured"
-    - value: "5x Faster"
-      label: "Response Time"
-    - value: "28hr/week"
-      label: "Hours Saved"
+    - value: "+10 Años"
+      label: "De Trayectoria Legal"
+    - value: "0%"
+      label: "Riesgo en Contingencias"
+    - value: "Multi"
+      label: "Jurisdiccional (Ec / Usa)"
   testimonial:
-    quote: "This all-in-one software is exactly what our local business needed. It completely eliminated our need for 4 other separate platforms and organized our entire customer pipeline."
+    quote: "Delegar la contraloría fiscal y laboral a Sotomayor Consulting transformó nuestra operación. Logramos un blindaje normativo total ante el SRI y la estructura perfecta para expandir nuestra marca e inversiones hacia el mercado de Florida sin contingencias."
     avatar: "/images/avatar.png"
-    name: "Ronald Richards"
-    company: "Local Services Co."
+    name: "Ing. Esteban Ortiz" # O el nombre/cargo real de un cliente corporativo ficticio/real
+    company: "Grupo Inmobiliario & Comercial"
 
 growth_process:
   enable: true
-  title: 'Your 3-Step Path to <strong class="italic">Automated Growth</strong>'
+  title: 'Su camino de 3 pasos hacia el <strong class="italic">Blindaje Corporativo</strong>'
   items:
-    - logo: "/images/value-proposition/values-icon-2.svg"
-      title: "1. Start Your Trial"
-      content: "Sign up for a free trial and experience the power of the platform for yourself. No credit card required."
-    - logo: "/images/value-proposition/values-icon-2.svg"
-      title: "2. Connect Your Business"
-      content: "Forward your calls, plug in your social accounts, and unify your inbox in a matter of clicks."
-    - logo: "/images/value-proposition/values-icon-2.svg"
-      title: "3. Scale on Autopilot"
-      content: "Watch your calendar fill up and reviews come in automatically, so you can focus on serving your customers."
+    - logo: "/images/value-proposition/3-steps-icon-1.svg"
+      title: "1. Agende una Sesión Estratégica"
+      content: "Reserve una reunión inicial con nuestros consultores senior para analizar a fondo la situación actual y los objetivos de su empresa."
+
+    - logo: "/images/value-proposition/3-steps-icon-2.svg"
+      title: "2. Diagnóstico y Designación"
+      content: "Evaluamos técnicamente su caso. Tras definir la hoja de ruta, nos formaliza como sus asesores oficiales para tomar el control legal y fiscal."
+
+    - logo: "/images/value-proposition/3-steps-icon-3.svg"
+      title: "3. Resolución y Estructuración"
+      content: "Ejecutamos la estrategia diseñada, neutralizamos contingencias ante los entes reguladores y blindamos de forma permanente su negocio."
   button:
     enable: true
-    label: "Start Your 14-Day Free Trial"
+    label: "Agende su Sesión Estratégica"
     link: "/pricing"
 
 integrations:
-  enable: true
+  enable: false
   title: "Connect all your <strong>Applications</strong>"
   items:
     - image: "/images/integrations/snapchat.png"
@@ -146,7 +175,7 @@ integrations:
       alt: "asana"
 
 lead_generation:
-  enable: true
+  enable: false
   title: "Free Resource for <strong>Local Business Owners</strong>"
   subtitle: 'The "Leaking Bucket" Audit: 5 Ways You''re Losing Local Leads (And How to Fix Them).'
   content: |
@@ -164,7 +193,7 @@ lead_generation:
     link: "/contact"
 
 pricing:
-  enable: true
+  enable: false
   title: "Affordable <strong>Pricing Plans</strong>"
   content: "Choose the plan that fits your local business and start growing automatically."
 ---

@@ -1,20 +1,23 @@
 ---
 import ImageMod from "@/layouts/components/ImageMod.astro";
+import { Icon } from "astro-icon/components"
 interface Props {
   logo: string;
   title: string;
   is_starred: boolean;
+  description: string;
 }
-const { logo, title, is_starred } = Astro.props;
+const { logo, title, is_starred, description } = Astro.props;
 ---
 
 <div
   class="p-8 xl:px-10 xl:py-11 border-t border-l border-text-light/5 relative"
 >
-  <ImageMod src={logo} alt={`${title} icon`} class="mb-6 mx-auto" />
+  <!-- <ImageMod src={logo} alt={`${title} icon`} class="mb-6 mx-auto" /> -->
+   <Icon name={logo} class="mb-6 mx-auto text-3xl" />
   <h3 class="text-h5-sm font-bold mb-4 text-center">{title}</h3>
   <p class="text-center">
-    Visualize how teams are staffed & what resources are available across.
+    {description}
   </p>
   {
     [

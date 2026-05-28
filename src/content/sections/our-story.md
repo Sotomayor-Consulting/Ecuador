@@ -1,20 +1,20 @@
 ---
 enable: true
-badge: "Our Philosophy"
-title: "Why We Do What We Do - A Letter From <strong>Our CEO</strong>"
+badge: "Nuestra Filosofía"
+title: "La Visión Detrás de su Respaldo Corporativo - Una Carta de <strong>Nuestro Fundador</strong>"
 ceo:
-  image: "/images/avatar-lg.png"
-  name: "Ronald Richards"
-  role: "Founder & CEO"
-letter: '<p><strong class="text-white font-normal">At Automark, we know you started your local business to serve your community, not to become a software engineer.</strong> The problem is most modern marketing tools are too complex, scattered, and disconnected, which leaves you feeling overwhelmed and stuck in the daily admin grind.</p><br><p>We believe you shouldn''t have to pay for five different subscriptions or spend your weekends sending emails just to grow your company. We understand how frustrating it is to watch hard-earned leads slip through the cracks, which is why we built a single, unified platform that puts your follow-ups, reviews, and bookings on complete autopilot.</p>'
-letter_points_title: "Here's how we do it:"
+  image: "/images/avatar-lg.png" # Asegúrate de cambiar esto por la foto real
+  name: "COO. Sebastian Sotomayor" # Ajusta el título (Ab., Ing., etc.) y nombre real
+  role: "Fundador y CEO Global"
+letter: '<p><strong class="text-white font-normal">En Sotomayor Consulting, sabemos que usted fundó su empresa para liderar el mercado y consolidar un legado, no para desgastarse en litigios laborales o burocracia fiscal.</strong> El problema es que el entorno normativo actual es complejo, agresivo y fragmentado, lo que genera una fricción legal constante que frena el crecimiento y pone en riesgo el patrimonio familiar.</p><br><p>Nuestra <b>Misión</b> es simple: transformar el cumplimiento normativo en su mayor ventaja competitiva. Creemos firmemente que ningún empresario debería limitar su crecimiento por fronteras geográficas o vacíos legales. Por ello, a través de <b>Sotomayor Consulting International</b>, diseñamos el puente definitivo hacia la economía global, teniendo como pilar estratégico la estructuración e incorporación de corporaciones LLC en los Estados Unidos, permitiendo a nuestros clientes diversificar riesgos, optimizar flujos transfronterizos y captar capital internacional con total seguridad.</p>'
+letter_points_title: "Nuestra Visión se ejecuta bajo tres pilares fundamentales:"
 letter_points:
-  - "1. Plug In Your Business Data"
-  - "2. Activate Our Local Workflows"
-  - "3. Watch Your Bookings Grow"
-closing_content: "Stop wasting money on scattered tools that don't talk to each other, and instead enjoy a streamlined business with consistent, predictable revenue growth."
+  - "1. Blindaje Local Integral (Fiscal, Laboral y Societario)"
+  - "2. Estructuración Internacional Eficiente mediante LLCs en EE.UU."
+  - "3. Continuidad y Protección del Legado Patrimonial"
+closing_content: "Deje de operar bajo la incertidumbre de las fiscalizaciones o las barreras fronterizas. Permítanos construir una arquitectura empresarial sólida, escalable y con un alcance global predecible."
 button:
   enable: true
-  label: "Start Your 14-Day Free Trial"
+  label: "Agende una Consulta"
   link: "/pricing"
 ---

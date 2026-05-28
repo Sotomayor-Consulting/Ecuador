@@ -1,29 +1,29 @@
 ---
-title: "About Us"
+title: "Nosotros"
 meta_title: "About Us - All-In-One Local Business Software"
 description: "Your System-Driven Growth Partner."
 image: ""
 draft: false
 
 page_header:
-  title: "Your System-Driven <strong>Growth Partner.</strong>"
-  subtitle: "We believe local businesses shouldn't have to hire a full-time IT department just to get more customers. We built this platform to put your growth on autopilot."
+  title: "Su Socio Estratégico en <strong>Estructuración y Blindaje Global.</strong>"
+  subtitle: "Creemos firmemente que el crecimiento de una empresa no debe verse limitado por la burocracia fiscal ni las fronteras geográficas. Diseñamos la arquitectura jurídica e internacional que su negocio necesita para operar con absoluta tranquilidad y expandirse con éxito hacia mercados globales."
   image: "/images/about_hero.png"
 
 stats:
   enable: true
   items:
-    - value: "10,000+"
-      label: "Local Businesses Served"
-    - value: "5M+"
-      label: "Leads Captured"
-    - value: "24/7"
-      label: "Automated Workflows"
-    - value: "99%"
-      label: "Platform Uptime"
+    - value: "+10 Años"
+      label: "De Trayectoria Legal y Fiscal"
+    - value: "102"
+      label: "Jurisdicciones Activas (Ec / Usa)"
+    - value: "0"
+      label: "Contingencias en Auditorías"
+    - value: "100%"
+      label: "De Confidencialidad Corporativa"
 
 our_team:
-  enable: true
+  enable: false
   badge: "Our Team"
   title: "Meet Our <strong>Team Of Experts</strong>"
   members:

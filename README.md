@@ -1,136 +1,75 @@
-<h1 align=center>Automark - Free Astro + GoHighLevel SaaS Website Template</h1>
-<p align=center> Automark is a free Astro SaaS theme specifically crafted for GoHighLevel White-Label SaaS resellers and agencies.
-</p>
+# Sotomayor Consulting — Sitio Web Corporativo Premium
 
-<h2 align="center"> 
-  <a target="_blank" href="https://automark-astro.vercel.app/" rel="nofollow">👀Demo</a> | 
-  <a target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fautomark-astro.vercel.app%2F&form_factor=desktop">Page Speed (100%)🚀</a>
-</h2>
+Este repositorio contiene el código fuente y los archivos de contenido estructurado (`.md`) para la plataforma web oficial de **Sotomayor Consulting** y **Sotomayor Consulting International** (v2026). El sitio está diseñado bajo un enfoque *High-Ticket* orientado a la captación de leads empresariales, grupos económicos y clientes que buscan blindaje patrimonial, optimización fiscal transfronteriza y estructuras de control global.
 
-<p align=center>
-  <a href="https://github.com/withastro/astro/releases/tag/astro%406.1.5" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=ASTRO&message=6.1.5&color=000&logo=astro" />
-  </a>
+## 🚀 Arquitectura Tecnológica
 
-  <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/themefisher/automark-astro" alt="license"></a>
+La plataforma está desarrollada utilizando el ecosistema moderno de desarrollo web:
 
-  <img src="https://img.shields.io/github/languages/code-size/themefisher/automark-astro" alt="code size">
+* **Framework:** [Astro](https://astro.build/) — Para lograr una velocidad de carga instantánea, optimización SEO extrema y entrega de HTML estático sin JavaScript innecesario.
+* **Estilos:** [Tailwind CSS](https://tailwindcss.com/) — Para un diseño utilitario, modular y responsive.
+* **Manejo de Íconos:** [Astro Icon](https://github.com/natemoo-re/astro-icon) integrado de forma nativa con **Material Symbols**.
+* **Gestión de Contenido:** Markdown con Frontmatter extendido (YAML) para una separación limpia entre los datos del negocio y los componentes visuales.
 
-  <a href="https://github.com/themefisher/automark-astro/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/themefisher/automark-astro" alt="contributors"></a>
-</p>
+---
 
-<img width="1600" height="900" alt="automark-astro-gohighlevel-template" src="https://github.com/user-attachments/assets/dc93ae19-4e8a-46e3-b5b6-41c7bd46870c" />
+## 📂 Estructura de Servicios (22 Especialidades)
 
-While most resellers use the same stock templates, Automark gives you a modern, bespoke look to differentiate your brand. It comes pre-integrated with **GoHighLevel** for CRM/Lead management and **Stripe** for subscription handling, allowing you to launch a professional SaaS presence in minutes.
+El contenido del portafolio se encuentra segmentado en la ruta `src/content/services/` (o la ruta de colecciones definida en tu proyecto), dividido en 4 bloques estratégicos de conversión:
 
-The template is **Agent-Ready**, featuring a dedicated .agents/skills directory designed to work seamlessly with agentic IDEs like Antigravity, Cursor, VS Code, and Claude Code. It follows industry-leading patterns for Astro, GoHighLevel, and Stripe best practices, making it as easy for an AI agent to maintain as it is for a human.
+### 💼 1. Área Fiscal y Tributaria Local (Ecuador)
+* `optimizacion-fiscal-transfronteriza.md` — Aplicación técnica de CDIs y retenciones al exterior.
+* `planificacion-fiscal-estrategica.md` — Matrices impositivas predictivas y anuales.
+* `consultas-cumplimiento-tributario.md` — Dictámenes normativos y resolución de zonas grises de la LRTI.
+* `gestion-devolucion-impuestos.md` — Reclamos administrativos de IVA, ISD y Pago en Exceso.
+* `capacitacion-actualizacion-tributaria.md` — Talleres *In-House* adaptados al giro de la industria.
+* `gestion-procesos-administrativos-sri.md` — Atención, comparecencias y descarga de requerimientos del SRI.
 
-## 🔑 Key Features
+### 🏛️ 2. Área de Derecho Societario y Corporativo
+* `derecho-societario-estructuras.md` — Constitución y diseño de estatutos avanzados (S.A.S., S.A.).
+* `asesoria-cesion-acciones.md` — Compraventa de participaciones e Impuesto a la Renta Único.
+* `disolucion-liquidacion-empresas.md` — Extinción legal y cancelación de vehículos inactivos.
+* `constitucion-holdings-trusts.md` — Ingeniería de control para separar activos operativos de riesgos fijos.
 
-* **Native GoHighLevel integration** for leads, contacts, conversations, calendar booking, and more.
-* **Stripe subscription suite** with automated checkout sessions and GHL contact tagging via webhooks
-* **10+ conversion-focused pages** covering every section a SaaS reseller website needs
-* **Agentic IDE support** with a pre-configured `.agents/skills` directory for Cursor, Claude Code, and VS Code
-* **100 Google** [**PageSpeed score**](https://pagespeed.web.dev/analysis/https-automark-astro-vercel-app/xtvggyeeh3?form_factor=desktop) (Desktop)
-* **Built with Astro 6 and Tailwind CSS 4** for minimal JavaScript output and fast load times
-* **MDX support** for blog posts, case studies, and careers pages
-* **Automatic OG images and sitemap generation** with schema-friendly markup throughout
-* **Interactive pricing table** with monthly/yearly toggle built in
+### 👥 3. Área Laboral y de Litigio Obrero-Patronal
+* `asesoria-laboral-integral.md` — Arquitectura contractual, reglamentos internos y políticas de RR.HH.
+* `contraloria-laboral-mensual.md` — Auditoría continua de planillas IESS, nómina y validación preventiva de finiquitos.
+* `auditorias-debida-diligencia-laboral.md` — *Due Diligence* de pasivos e historial para procesos M&A.
+* `representacion-defensa-litigios-laborales.md` — Patrocinio legal en juzgados de trabajo y defensa de intereses patronales.
+* `defensa-representacion-juicios-tributarios.md` — Impugnación judicial y constitucional de actas de determinación del SRI.
 
-## 📄 Pre-Designed Pages
+### 🌐 4. Área de Expansión Internacional e Inversiones Globales
+* `softlanding-corporativo.md` — Despliegue legal, bancario y operativo en Estados Unidos (Florida/Delaware).
+* `incorporacion-estructuracion-llc.md` — Optimización y apertura de LLCs transparente ante el IRS y FinCEN.
+* `inversiones-inmobiliarias-florida.md` — Estructuración de *Real Estate* para mitigar la retención FIRPTA y el *Estate Tax*.
+* `planes-de-negocio-viabilidad.md` — *Business Plans* financieros bajo estándares bancarios y de visas de inversión.
+* `asesoria-legal-multijurisdiccional.md` — Sincronización jurídica y fiscal cruzada Ecuador-USA.
+* `gestion-patrimonio-familiar.md` — Arquitectura de *Family Office* para la preservación confidencial de capitales.
+* `planificacion-hereditaria-sucesoria.md` — Donaciones con usufructo, testamentos y fideicomisos autónomos.
 
-1. **Home**: High-conversion landing page with automation focus.
-2. **About**: Showcase your team, mission, and company values.
-3. **Features**: Detailed breakdown of automation and growth tools.
-4. **Integrations**: Display your ecosystem with a sleek grid layout.
-5. **Pricing**: Interactive pricing tiers with monthly/yearly switching.
-6. **Blog**: Full-featured blog with category and single post support.
-7. **Careers**: Job listings with individual position pages.
-8. **Case Studies**: Portfolio of client success stories.
-9. **Contact**: GHL-integrated form and calendar booking.
-10. **Legal Pages**: Professional Privacy Policy and Terms templates.
-11. **404 Page**: Custom error page.
+---
 
-## ⚙️Installation
+## 🛠️ Lineamientos de Modificación y Consistencia
 
-### 🔧Install prerequisites
+Para asegurar que la web mantenga su rendimiento técnico y coherencia visual, se deben respetar las siguientes directrices establecidas:
 
-- **Node.js:** [Install Node.js LTS](https://nodejs.org/en/download/)
-- **Package Manager:** `npm`, `yarn`, or `pnpm` (Yarn recommended).
-
-### 🖥️Local setup
-
-1.  👉 **Install dependencies**
-    ```bash
-    yarn install
+1.  **Iconografía Unificada:** No se deben enlazar imágenes estáticas locales (`.svg` o `.png`) en los parámetros de logotipos o íconos de las listas. Toda la iconografía del sitio consume la colección **Material Symbols** a través de `astro-icon` utilizando la nomenclatura limpia de la colección:
+    ```yaml
+    icon: "material-symbols:shield-lock-outline"
     ```
+2.  **Formatos Legales:** Las páginas correspondientes a `privacy.md` y `terms.md` se encuentran totalmente redactadas bajo la normativa de la **LOPDP (Ecuador)** e incluyen los descargos de responsabilidad corporativos (*Disclaimers*) obligatorios para blindar legalmente las comunicaciones informativas de la firma.
+3.  **Formateo de Textos:** Los textos en prosa, descripciones y cartas de presentación de los archivos `.md` utilizan formateo clásico de Markdown. El uso de LaTeX queda estrictamente reservado para la renderización de fórmulas o variables de optimización tributaria complejas dentro del código de renderizado de componentes Astro, nunca de forma directa en el texto plano.
 
-2.  👉 **Configure Environment Variables**
-    Copy `.env.example` to `.env` and fill in your integration keys.
-    ```bash
-    cp .env.example .env
-    ```
+## 💻 Comandos de Desarrollo
 
-3.  👉 **Run locally**
-    ```bash
-    yarn dev
-    ```
-
-## 🔌 Integration Setup guide
-
-Automark works out-of-the-box with GoHighLevel and Stripe. Follow these steps to activate the automation features:
-
-### 1. GoHighLevel (GHL) Setup
-This project uses GHL to capture leads from contact forms, track checkout initiations, and mark customers as paid upon successful Stripe transactions.
-
-- **Location ID**: Navigate to **Settings** -> **Business Info** in your GHL sub-account and copy the **Location ID**.
-- **Private API Key**: Go to **Settings** -> **Integrations** -> **Private Integration**. Generate/Copy your API Key.
-  - Create a **"price"** field (Text/Monetary) to track Stripe purchases.
-  - *Note: Ensure the Unique Key in GHL matches `"price"` exactly as used in the API routes.*
-- **Calendar Meeting**: Find your calendar in **Calendars**, copy the **Scheduling Link**, and paste it into `src/content/contact/-index.md`.
-
-### 2. Stripe Setup
-Stripe handles subscriptions and one-time payments, syncing status back to GHL via webhooks.
-
-- **API Keys**: Get your **Secret key** (`sk_...`) from **Developers** -> **API keys**.
-- **Configure Webhooks**: 
-  - Add an endpoint in **Developers** -> **Webhooks** pointing to `https://your-domain.com/api/webhooks/stripe`.
-  - Select the `checkout.session.completed` event.
-  - Copy the **Signing secret** (`whsec_...`) to your `.env` file.
-
-### 3. Workflow Overview
-- **`/api/lead`**: Captures leads and assigns the `website-lead-generation` tag.
-- **`/api/contact`**: Captures form data, assigns `website-contact-form`, and sends the message to the GHL **Conversations** tab.
-- **`/api/checkout`**: Initiates a Stripe subscription and tags the contact as `checkout-initiated`.
-- **Stripe Webhook**: Updates the GHL contact to `paid-customer` and logs the price upon successful payment.
-
-## 🔨Production Build
+En caso de requerir levantar el entorno local de desarrollo para la plataforma:
 
 ```bash
-yarn build
-```
+# Instalar las dependencias del proyecto
+yarn install
 
-## 📝 Edit Content with CMS
+# Iniciar el servidor de desarrollo local
+yarn run dev
 
-This template comes pre-configured with [**Sitepins**](https://sitepins.com/?aff=tfgithub), a Git-based Headless CMS designed for seamless content management.
-
-**How to get started:**
-
-Click the Edit with Sitepins button below to start editing your content visually.
-
-<a target="_blank" href="https://app.sitepins.com/new/clone?name=Automark%20Astro&repository=https://github.com/themefisher/automark-astro/?aff=tfgithub">
-  <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
-</a>
-
-## 🐞Reporting Issues
-
-We use GitHub Issues as the official bug tracker. Please Search [existing issues](https://github.com/themefisher/automark-astro/issues) before opening a new one.
-
-## 📄License
-
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-- **Code License:** Released under the [MIT](LICENSE) license.
-- **Image license:** Demonstration purposes only.
+# Compilar y generar el HTML estático optimizado para producción
+yarn run build

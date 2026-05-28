@@ -52,7 +52,7 @@ const caseStudies = await getSinglePage("caseStudy");
         {
           caseStudies.map((study) => (
             <CaseStudyCard
-              href={`/case-study/${study.id}`}
+              href={`/services/${study.id}`}
               image={study.data.image!}
               logo={study.data.logo!}
               company={study.data.company!}

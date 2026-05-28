@@ -23,6 +23,7 @@ const homepage = await getListPage("homepage", "-index");
 const homepageData: Homepage = homepage.data;
 
 const { checklist_form_action } = config.params;
+import { Icon } from 'astro-icon/components'
 ---
 
 <Base>
@@ -37,7 +38,7 @@ const { checklist_form_action } = config.params;
       <div class="row justify-center">
         <div class="mb-20 text-center relative">
           <h1
-            class="mb-8 lg:col-9 mx-auto text-h3 lg:text-h1 hasHighlight"
+            class="mb-8 lg:col-9 mx-auto text-h3 lg:text-h1-sm hasHighlight text-pretty"
             set:html={markdownify(homepageData.banner.title)}
           />
           <p class="mb-10 lg:col-6 mx-auto">{homepageData.banner.content}</p>
@@ -47,7 +48,7 @@ const { checklist_form_action } = config.params;
               rel="noopener noreferrer"
               href={homepageData.banner.button_primary.link}
             >
-              {homepageData.banner.button_primary.label}
+              {homepageData.banner.button_primary.label} 
             </a>
             <a
               class="btn btn-outline"
@@ -238,19 +239,8 @@ const { checklist_form_action } = config.params;
                   .slice(0, 3)
                   .map((text: string) => (
                     <div class="bg-body border border-border px-4 w-full py-2.5 rounded-full flex items-center justify-center relative z-10 gap-x-2">
-                      <svg
-                        class="shrink-0"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M9.99999 1.04163C14.9476 1.04163 18.9583 5.05241 18.9583 9.99996C18.9583 14.9475 14.9476 18.9583 9.99999 18.9583C5.05244 18.9583 1.04166 14.9475 1.04166 9.99996C1.04166 5.05241 5.05244 1.04163 9.99999 1.04163ZM8.02571 6.8538C7.69841 6.58685 7.2159 6.6057 6.9108 6.91077C6.60581 7.21587 6.5869 7.6984 6.85383 8.02568L6.9108 8.08915L8.82157 9.99996L6.91161 11.9108C6.5863 12.2362 6.58619 12.7638 6.91161 13.0891C7.23705 13.4143 7.76464 13.4145 8.09 13.0891L9.99999 11.1784L11.91 13.0891L11.9735 13.1461C12.3007 13.413 12.7832 13.394 13.0884 13.0891C13.3934 12.7842 13.4128 12.3015 13.1462 11.9742L13.0884 11.9108L11.1776 9.99996L13.0892 8.08915L13.1462 8.02568C13.4131 7.69839 13.3942 7.21587 13.0892 6.91077C12.7841 6.6057 12.3016 6.58685 11.9742 6.8538L11.9108 6.91077L9.99999 8.82154L8.08918 6.91077L8.02571 6.8538Z"
-                          fill="var(--color-secondary)"
-                        />
-                      </svg>
+                      
+                      <Icon name="material-symbols:check" class="shrink-0 text-2xl text-green-600" />
                       <span class="font-semibold text-white text-lg">
                         {text}
                       </span>
@@ -262,19 +252,7 @@ const { checklist_form_action } = config.params;
                   .slice(3)
                   .map((text: string) => (
                     <div class="bg-body border border-border px-4 w-full py-2.5 rounded-full flex items-center justify-center relative z-10 gap-x-2">
-                      <svg
-                        class="shrink-0"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M9.99999 1.04163C14.9476 1.04163 18.9583 5.05241 18.9583 9.99996C18.9583 14.9475 14.9476 18.9583 9.99999 18.9583C5.05244 18.9583 1.04166 14.9475 1.04166 9.99996C1.04166 5.05241 5.05244 1.04163 9.99999 1.04163ZM8.02571 6.8538C7.69841 6.58685 7.2159 6.6057 6.9108 6.91077C6.60581 7.21587 6.5869 7.6984 6.85383 8.02568L6.9108 8.08915L8.82157 9.99996L6.91161 11.9108C6.5863 12.2362 6.58619 12.7638 6.91161 13.0891C7.23705 13.4143 7.76464 13.4145 8.09 13.0891L9.99999 11.1784L11.91 13.0891L11.9735 13.1461C12.3007 13.413 12.7832 13.394 13.0884 13.0891C13.3934 12.7842 13.4128 12.3015 13.1462 11.9742L13.0884 11.9108L11.1776 9.99996L13.0892 8.08915L13.1462 8.02568C13.4131 7.69839 13.3942 7.21587 13.0892 6.91077C12.7841 6.6057 12.3016 6.58685 11.9742 6.8538L11.9108 6.91077L9.99999 8.82154L8.08918 6.91077L8.02571 6.8538Z"
-                          fill="var(--color-secondary)"
-                        />
-                      </svg>
+                       <Icon name="material-symbols:check" class="shrink-0 text-2xl text-green-600" />
                       <span class="font-semibold text-white text-lg">
                         {text}
                       </span>
@@ -330,7 +308,7 @@ const { checklist_form_action } = config.params;
   <BusinessNeeds />
 
   <!-- Comparison -->
-  <ComparisonRow />
+  <!-- <ComparisonRow /> -->
 
   <!-- Testimonial Quote -->
   {
@@ -521,7 +499,7 @@ const { checklist_form_action } = config.params;
   }
 
   <!-- Our Thought / CEO Letter -->
-  <OurStory />
+  <!-- <OurStory /> -->
 
   <!-- Integrations -->
   {

@@ -1,20 +1,24 @@
 ---
 enable: true
-title: "Quick Answers for the Smart Investors"
-description: "Find answers to common questions about our product and services."
+title: "Respuestas Clave para Decisiones Estratégicas"
+description: "Resuelva sus dudas frecuentes sobre nuestros servicios de blindaje corporativo y estructuración internacional."
 button:
   enable: true
-  label: "Get This Template"
-  link: "https://themefisher.com/products/automark-astro?aff=automarkdemo"
+  label: "Consulte con un Especialista"
+  link: "/contacto"
 items:
-  - question: "Is this software hard to set up?"
-    answer: "Not at all. We built this platform specifically for local business owners who aren't tech experts. We provide templates and 1-on-1 support to get you running fast."
-  - question: "What if I already have a website?"
-    answer: "You can keep your existing website! Our tools (like the Web Chat Widget and Missed Call Text-Back) easily integrate with WordPress, Wix, and Squarespace with a simple line of code."
-  - question: "Can this replace my existing CRM or Mailchimp?"
-    answer: "Yes. Our platform includes a full CRM, unlimited email marketing, and SMS capabilities. Most of our clients cancel 3-5 other software subscriptions when they switch to us."
-  - question: "How does the Missed Call Auto-Responder work?"
-    answer: "When a customer calls your business number and you don't answer, the system instantly texts them back (e.g., 'Sorry we missed your call! How can we help you?'). This stops leads from calling your competitors."
-  - question: "Are there any hidden fees?"
-    answer: "No hidden fees. You pay a simple flat monthly rate. You may just pay fractional cents directly to telecom providers for your SMS usage, exactly what it costs."
+  - question: "¿Por qué mi empresa necesita una contraloría mensual y no solo un contador?"
+    answer: "Un contador tradicional registra el pasado financiero. Nuestra contraloría (fiscal y laboral) actúa en el presente mediante auditorías preventivas y técnicas. El objetivo es neutralizar riesgos y evitar glosas del SRI o sanciones del Ministerio del Trabajo antes de que ocurran."
+
+  - question: "¿Qué ventajas reales ofrece Sotomayor Consulting International al abrir una LLC en EE.UU.?"
+    answer: "La incorporación de una LLC en Estados Unidos no es un simple trámite de registro. Diseñamos la arquitectura legal y fiscal desde el inicio para garantizar la protección de sus activos, el acceso al sistema bancario estadounidense y la aplicación correcta de estrategias que eviten la doble imposición transfronteriza."
+
+  - question: "Si mi empresa es local, ¿puedo acceder a los servicios de protección patrimonial?"
+    answer: "Por supuesto. La protección patrimonial y la planificación hereditaria están diseñadas para cualquier empresario o grupo familiar que haya consolidado activos y busque blindarlos frente a riesgos operativos, comerciales o transiciones sucesorias complejas."
+
+  - question: "¿Cómo se formaliza la relación para que actúen como mis asesores oficiales?"
+    answer: "El proceso es transparente y bajo estricta confidencialidad. Tras una sesión estratégica inicial y el diagnóstico de su caso, firmamos un acuerdo de servicios y emitimos las designaciones formales ante las entidades reguladoras correspondientes (como el SRI) para asumir su representación."
+
+  - question: "¿Los servicios internacionales implican doble tributación entre Ecuador y EE.UU.?"
+    answer: "Ese es el error más común y costoso. Nuestro equipo se especializa en derecho fiscal internacional para estructurar sus operaciones mediante el uso técnico de convenios e instrumentos societarios, logrando que sus flujos e inversiones globales tributen de la manera más eficiente y completamente legal."
 ---

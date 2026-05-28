@@ -1,9 +1,9 @@
 ---
 enable: true
-title: "Ready to put Your Local Business Growth on <strong>Autopilot?</strong>"
-description: "Stop wasting thousands on scattered tools that don't convert and start enjoying streamlined, predictable growth."
+title: "¿Listo para consolidar el <strong>alcance Global de su Empresa?</strong>"
+description: "Deje de asumir riesgos fiscales y legales que frenan su crecimiento. Permita que nuestro equipo blinde su patrimonio y configure su expansión transfronteriza hoy mismo."
 button:
   enable: true
-  label: "Start Your 14-Days Free Trial"
-  link: "https://themefisher.com/products/automark-astro?aff=automarkdemo"
+  label: "Agende su Sesión Estratégica"
+  link: "/contact"
 ---

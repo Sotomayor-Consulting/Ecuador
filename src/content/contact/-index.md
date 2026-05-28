@@ -1,30 +1,33 @@
 ---
-title: "Contact Us"
-meta_title: "Contact Us - All-In-One Local Business Software"
-description: "Have a question about streamlining your business? Send us a message."
-image: ""
+title: "Contáctanos"
+meta_title: "Contacto y Consultas Corporativas - Sotomayor Consulting"
+description: "Póngase en contacto con nuestros consultores estratégicos y abogados corporativos. Resuelva sus dudas fiscales, laborales y transfronterizas."
 draft: false
 
+image: "/images/contact-hero.png"
+
 page_header:
-  title: "Have a question? <strong>Send us a message</strong>"
-  subtitle: "Our team is here to help. Whether you want to learn more about the Missed Call Auto-Responder, or how to set up your Unified Inbox, our support team is ready to assist you."
+  title: "Agende una <strong>Consulta Especializada</strong>"
+  subtitle: "Nuestro equipo de consultores y litigantes está listo para blindar su empresa. Ya sea que requiera estructurar una Contraloría Preventiva, resolver una notificación del SRI o expandir sus operaciones mediante una LLC en EE.UU., le brindamos el respaldo jurídico que su negocio necesita."
 
 contact_info:
   enable: true
   items:
     - type: "email"
-      title: "Email Us"
-      detail: "hello@yoursoftware.com"
-      link: "mailto:hello@yoursoftware.com"
+      title: "Consultas Formales"
+      detail: "info@sotomayorconsulting.com"
+      link: "mailto:info@sotomayorconsulting.com"
       icon: "FaEnvelope"
+      
     - type: "phone"
-      title: "Call or Text Us"
-      detail: "+1 (800) 123-4567"
-      link: "tel:+18001234567"
+      title: "Línea Corporativa"
+      detail: "+593 (2) 123-4567" # Reemplaza con tu número real de Ecuador
+      link: "tel:+59321234567"
       icon: "FaPhone"
+      
     - type: "calendar"
-      title: "Book A Demo"
-      detail: "Schedule your one-on-one setup call"
-      link: "https://api.leadconnectorhq.com/widget/booking/huqDO6gbH3SQmdp73TjE"
+      title: "Sesión Estratégica"
+      detail: "Agende una reunión de diagnóstico con nuestros asesores"
+      link: "https://zcal.co/t/agendar-asesoria-llc/60min" # Reemplaza con tu link real de Calendly o LeadConnector
       icon: "FaCalendarCheck"
 ---

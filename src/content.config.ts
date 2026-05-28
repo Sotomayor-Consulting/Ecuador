@@ -60,6 +60,7 @@ const aboutCollection = defineCollection({
           logo: z.string(),
           title: z.string(),
           is_starred: z.boolean(),
+          
         }),
       ),
     }),
@@ -150,6 +151,7 @@ const homepageCollection = defineCollection({
           logo: z.string(),
           title: z.string(),
           is_starred: z.boolean(),
+          description: z.string(),
         }),
       ),
     }),

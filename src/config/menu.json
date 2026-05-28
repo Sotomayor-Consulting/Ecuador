@@ -1,84 +1,65 @@
 {
   "main": [
     {
-      "name": "Features",
-      "url": "/features"
+      "name": "Servicios",
+      "url": "/services"
     },
     {
-      "name": "Pricing",
-      "url": "/pricing"
+      "name": "Nosotros",
+      "url": "/about"
+    },
+    {
+      "name": "Contáctanos",
+      "url": "/contact"
     },
     {
       "name": "Blog",
       "url": "/blog"
-    },
-    {
-      "name": "Integrations",
-      "url": "/integrations"
-    },
-    {
-      "name": "Case Studies",
-      "url": "/case-study"
-    },
-    {
-      "name": "Contact",
-      "url": "/contact"
     }
   ],
-  "footer_col_1_title": "Primary",
-  "footer_col_2_title": "Resource",
+  "footer_col_1_title": "Links",
+  "footer_col_2_title": "Links externos",
   "footer_col_3_title": "Legal",
   "footer_primary": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "About Us",
+      "name": "Nosotros",
       "url": "/about"
     },
     {
-      "name": "Features",
-      "url": "/features"
-    },
-    {
-      "name": "Pricing",
-      "url": "/pricing"
-    },
-    {
-      "name": "Contact",
+      "name": "Contáctanos",
       "url": "/contact"
+    },
+    {
+      "name": "Servicios",
+      "url": "/services"
+    },
+    {
+      "name": "blog",
+      "url": "/blog"
     }
   ],
   "footer_resource": [
     {
-      "name": "Case Studies",
-      "url": "/case-study"
+      "name": "Agenda un reunión",
+      "url": "https://zcal.co/t/agendar-asesoria-llc/60min"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
-    },
-    {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
-      "name": "Careers",
-      "url": "/careers"
-    },
-    {
-      "name": "Integrations",
-      "url": "/integrations"
+      "name": "Sotomayor Consulting international",
+      "url": "https://sotomayorconsulting.com/international/"
     }
+    
   ],
   "footer_legal": [
     {
-      "name": "Privacy Policy",
+      "name": "Politica de Privacidad",
       "url": "/privacy-policy"
     },
     {
-      "name": "Terms and Conditions",
+      "name": "Terminos y condiciones",
       "url": "/term-and-condition"
     }
   ]
