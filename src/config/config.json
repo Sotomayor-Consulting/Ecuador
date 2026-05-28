@@ -1,11 +1,11 @@
 {
   "site": {
     "title": "Sotomayor Consulting Ecuador",
-    "base_url": "https://automark-astro.vercel.app",
-    "base_path": "/",
+    "base_url": "https://sotomayor-consulting.github.io",
+    "base_path": "https://sotomayor-consulting.github.io/Ecuador/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/logo.svg",
+    "favicon": "/images/avatar-SCI-iso.png",
+    "logo": "/images/Logo_negro-redesing.png",
     "logo_width": "160",
     "logo_height": "45",
     "logo_text": "Sotomayor Consulting Ecuador"
