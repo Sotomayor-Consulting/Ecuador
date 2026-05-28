@@ -1,13 +1,14 @@
 ---
 import Social from "@/components/Social.astro";
 import config from "@/config/config.json";
-import menu from "@/config/menu.json";
+import menu from "@/config/menu";
 import social from "@/config/social.json";
 import Logo from "@/components/Logo.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { Menu, SocialType } from "@/types";
 
 const {
+  base_url,
   footer_primary,
   footer_resource,
   footer_legal,
@@ -23,7 +24,7 @@ const { main: socialLinks } = social as SocialType;
     <div class="flex lg:justify-between flex-wrap gap-x-10 gap-y-10">
       <!-- Column 1 - Logo & Contact -->
       <div class="max-w-95 mb-20 text-lg text-text">
-        <Logo />
+        <Logo link={base_url || "/"} />
         <p class="mt-6">{config.params.footer_tagline}</p>
         <a
           class="link mt-6 inline-block underline"

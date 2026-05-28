@@ -2,15 +2,15 @@
   "main": [
     {
       "name": "Servicios",
-      "url": "/Ecuador/services"
+      "url": "/services"
     },
     {
       "name": "Nosotros",
-      "url": "/Ecuador/about"
+      "url": "/about"
     },
     {
       "name": "Contáctanos",
-      "url": "/Ecuador/contact"
+      "url": "/contact"
     },
     {
       "name": "Blog",
@@ -23,11 +23,11 @@
   "footer_primary": [
     {
       "name": "Inicio",
-      "url": "/Ecuador/"
+      "url": "/"
     },
     {
       "name": "Nosotros",
-      "url": "/Ecuador/about"
+      "url": "/about"
     },
     {
       "name": "Contáctanos",
@@ -35,11 +35,11 @@
     },
     {
       "name": "Servicios",
-      "url": "/Ecuador/services"
+      "url": "/services"
     },
     {
-      "name": "blog",
-      "url": "/Ecuador/blog"
+      "name": "Blog",
+      "url": "/blog"
     }
   ],
   "footer_resource": [
@@ -51,16 +51,15 @@
       "name": "Sotomayor Consulting international",
       "url": "https://sotomayorconsulting.com/international/"
     }
-    
   ],
   "footer_legal": [
     {
       "name": "Politica de Privacidad",
-      "url": "/Ecuador/privacy-policy"
+      "url": "/privacy-policy"
     },
     {
       "name": "Terminos y condiciones",
-      "url": "/Ecuador/term-and-condition"
+      "url": "/term-and-condition"
     }
   ]
 }

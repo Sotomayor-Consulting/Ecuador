@@ -1,7 +1,8 @@
 ---
 import Logo from "@/components/Logo.astro";
 import config from "@/config/config.json";
-import menu from "@/config/menu.json";
+import menu from "@/config/menu";
+import type { Menu } from "@/types";
 
 export interface ChildNavigationLink {
   name: string;
@@ -15,7 +16,7 @@ export interface NavigationLink {
   children?: ChildNavigationLink[];
 }
 
-const { main }: { main: NavigationLink[] } = menu;
+const { main, base_url } = menu as Menu;
 const { navigation_button, settings } = config;
 const { pathname } = Astro.url;
 ---
@@ -26,7 +27,7 @@ const { pathname } = Astro.url;
   <nav class="navbar container relative z-30">
     <!-- logo -->
     <div class="order-0">
-      <Logo />
+      <Logo link={base_url || "/"} />
     </div>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="peer hidden" />

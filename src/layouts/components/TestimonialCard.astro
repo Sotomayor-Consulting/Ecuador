@@ -1,4 +1,6 @@
 ---
+import { withBasePath } from "@/lib/utils/url";
+
 interface Props {
   poster: string;
   content?: string;
@@ -7,7 +9,7 @@ interface Props {
   video?: string;
 }
 const { poster, content, name, designation, video } = Astro.props;
-console.log("Video URL:", video);
+const videoSrc = video ? withBasePath(video) : undefined;
 ---
 
 <div>
@@ -20,9 +22,9 @@ console.log("Video URL:", video);
       width="1000px"
       playsinline
       preload="metadata"
-      poster={poster}
+      poster={withBasePath(poster)}
     >
-      <source src={video} type="video/mp4" />
+      {videoSrc && <source src={videoSrc} type="video/mp4" />}
       Your browser does not support the video tag.
     </video>
     {

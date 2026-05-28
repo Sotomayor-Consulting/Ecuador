@@ -1,4 +1,5 @@
 import React from "react";
+import { withBasePath } from "@/lib/utils/url";
 
 function Video({
   title,
@@ -22,7 +23,7 @@ function Video({
       {...rest}
     >
       <source
-        src={src.match(/^http/) ? src : `/videos/${src}`}
+        src={src.match(/^http/) ? src : withBasePath(`/videos/${src}`)}
         type="video/mp4"
       />
       {title}

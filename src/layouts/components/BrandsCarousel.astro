@@ -1,12 +1,13 @@
 ---
 import { getListPage } from "@/lib/contentParser.astro";
+import { withBasePath } from "@/lib/utils/url";
 import type { BrandsSection } from "@/types";
 
 const brandsInfo = await getListPage("brandsSection", "brands");
 const brandsData: BrandsSection = brandsInfo.data;
 if (!brandsData.enable) return;
 
-const brandUrls = brandsData.images.map((img) => img.src);
+const brandUrls = brandsData.images.map((img) => withBasePath(img.src));
 ---
 
 {

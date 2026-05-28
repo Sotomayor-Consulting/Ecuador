@@ -1,7 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components'
+interface Props {
+  link: string;
+}
+
+const { link } = Astro.props;
 ---
 
-<a href="/" class="navbar-brand inline-block" title="Inicio">
+<a href={link} class="navbar-brand inline-block" title="Inicio">
   <Icon name="logo-sotomayor-consulting-ecuador" class="text-4xl" title="Logo Sotomayor consulting Ecuador"/>
 </a>

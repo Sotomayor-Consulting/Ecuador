@@ -34,6 +34,7 @@ export interface NavLink {
 }
 
 export interface Menu {
+  base_url: string;
   main: NavLink[];
   footer_col_1_title: string;
   footer_col_2_title: string;
