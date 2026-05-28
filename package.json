@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "concurrently \"node scripts/themeGenerator.js --watch\" \"astro dev\"",
     "build": "node scripts/themeGenerator.js && astro build",
+    "build:github-pages": "node scripts/themeGenerator.js && node scripts/build-static-site.js",
     "preview": "astro preview",
     "check": "astro check",
     "format": "prettier -w ./src",
