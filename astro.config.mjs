@@ -50,8 +50,8 @@ const fontsConfig = Object.entries(theme.fonts.font_family)
 // https://astro.build/config
 export default defineConfig({
   output: "static",
-  site: "https://sotomayor-consulting.github.io/Ecuador",
-  base: "/Ecuador",
+  site: "https://sotomayorconsultingecuador.com",
+  base: "/",
   trailingSlash: config.site.trailing_slash ? "always" : "never",
   image: { service: sharp() },
   vite: { plugins: [tailwindcss()] },
