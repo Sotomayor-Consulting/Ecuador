@@ -267,5 +267,5 @@ ul.green-tick-list {
 }
 
 .footer-link {
-  @apply text-text hover:text-white transition-colors duration-200;
+  @apply text-text hover:text-text/80 transition-colors duration-200;
 }
