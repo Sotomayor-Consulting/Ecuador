@@ -5,7 +5,7 @@ description: "Resuelva sus dudas frecuentes sobre nuestros servicios de blindaje
 button:
   enable: true
   label: "Consulte con un Especialista"
-  link: "/contacto"
+  link: "/contact"
 items:
   - question: "¿Por qué mi empresa necesita una contraloría mensual y no solo un contador?"
     answer: "Un contador tradicional registra el pasado financiero. Nuestra contraloría (fiscal y laboral) actúa en el presente mediante auditorías preventivas y técnicas. El objetivo es neutralizar riesgos y evitar glosas del SRI o sanciones del Ministerio del Trabajo antes de que ocurran."

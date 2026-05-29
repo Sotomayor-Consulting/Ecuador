@@ -68,6 +68,7 @@ import { sporeCanvas } from "./particleCanvas.js";
         const img = document.createElement("img");
         img.src = src;
         img.alt = "Trusted Brand";
+        img.loading = "lazy";
         img.draggable = false;
         frag.appendChild(img);
       });
