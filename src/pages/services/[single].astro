@@ -5,6 +5,7 @@ import ImageMod from "@/layouts/components/ImageMod.astro";
 import { getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Icon } from "astro-icon/components";
+import { withBasePath } from "@/lib/utils/url";
 
 export async function getStaticPaths() {
   const caseStudies = await getSinglePage("caseStudy");
@@ -147,7 +148,7 @@ const studyData = study.data;
                 <p class="text-white font-semibold">
                   {studyData?.challenges?.quote_author?.name}
                 </p>
-                <p class="text-text text-sm">
+                <p class="text-text-dark text-sm">
                   {studyData?.challenges?.quote_author?.designation}
                 </p>
               </div>
@@ -238,10 +239,10 @@ const studyData = study.data;
   <section class="section-sm">
     <div class="container text-center flex justify-center">
       <a
-        href="/services"
+        href={withBasePath(`/services`)}
         class="btn btn-outline flex items-center justify-center gap-2 w-fit"
       >
-        <Icon name="material-symbols:arrow-left-alt" class="" /> Regresar
+        <Icon name="material-symbols:arrow-left-alt" /> Regresar
         a servicios
       </a>
     </div>
