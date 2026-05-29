@@ -9,13 +9,13 @@
   --color-primary: #b98d33;
   --color-primary-light: #26537a;
   --color-secondary: #FF5353;
-  --color-body: #0d2636;
+  --color-body: #00000;
   --color-border: #202128;
   --color-light: #0B0C17;
   --color-dark: #040404;
-  --color-text: #DAD4DE;
-  --color-text-dark: #817E84;
-  --color-text-light: #E5E5E5;
+  --color-text: #0d2536;
+  --color-text-dark: #ffffff;
+  --color-text-light: #000000;
 
   /* === Font Families === */
   --font-primary: Inter Tight, sans-serif;

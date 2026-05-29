@@ -1,6 +1,6 @@
 ---
-import ImageMod from "@/layouts/components/ImageMod.astro";
-import { Icon } from "astro-icon/components"
+// import ImageMod from "@/layouts/components/ImageMod.astro";
+import { Icon } from "astro-icon/components";
 interface Props {
   logo: string;
   title: string;
@@ -14,9 +14,9 @@ const { logo, title, is_starred, description } = Astro.props;
   class="p-8 xl:px-10 xl:py-11 border-t border-l border-text-light/5 relative"
 >
   <!-- <ImageMod src={logo} alt={`${title} icon`} class="mb-6 mx-auto" /> -->
-   <Icon name={logo} class="mb-6 mx-auto text-3xl" />
-  <h3 class="text-h5-sm font-bold mb-4 text-center">{title}</h3>
-  <p class="text-center">
+  <Icon name={logo} class="mb-6 mx-auto text-3xl text-text-dark" />
+  <h3 class="text-h5-sm font-bold mb-4 text-center text-text-dark">{title}</h3>
+  <p class="text-center text-text-dark/80">
     {description}
   </p>
   {

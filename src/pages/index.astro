@@ -3,12 +3,12 @@ import ImageMod from "@/layouts/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import ValueCard from "@/layouts/components/ValueCard.astro";
 import BusinessNeeds from "@/layouts/components/BusinessNeeds.astro";
-import ComparisonRow from "@/layouts/components/ComparisonRow.astro";
-import PricingSection from "@/layouts/components/PricingSection.astro";
+// import ComparisonRow from "@/layouts/components/ComparisonRow.astro";
+// import PricingSection from "@/layouts/components/PricingSection.astro";
 import ProcessCard from "@/layouts/components/ProcessCard.astro";
 import GradientBlob from "@/layouts/components/GradientBlob.astro";
 import BrandsCarousel from "@/layouts/components/BrandsCarousel.astro";
-import OurStory from "@/layouts/components/OurStory.astro";
+// import OurStory from "@/layouts/components/OurStory.astro";
 import Faq from "@/layouts/components/Faq.astro";
 import CallToAction from "@/layouts/components/CallToAction.astro";
 import VideoShowcase from "@/layouts/components/VideoShowcase.astro";
@@ -19,6 +19,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import Testimonial from "@/partials/Testimonial.astro";
 import Features from "@/partials/Features.astro";
 import type { Homepage } from "@/types";
+import { withBasePath } from "@/lib/utils/url";
 const homepage = await getListPage("homepage", "-index");
 const homepageData: Homepage = homepage.data;
 
@@ -38,7 +39,7 @@ import { Icon } from 'astro-icon/components'
       <div class="row justify-center">
         <div class="mb-20 text-center relative">
           <h1
-            class="mb-8 lg:col-9 mx-auto text-h3 lg:text-h1-sm hasHighlight text-pretty"
+            class="mb-8 lg:col-9 mx-auto text-h3 lg:text-h1-sm hasHighlight text-pretty text-text"
             set:html={markdownify(homepageData.banner.title)}
           />
           <p class="mb-10 lg:col-6 mx-auto">{homepageData.banner.content}</p>
@@ -46,14 +47,14 @@ import { Icon } from 'astro-icon/components'
             <a
               class="btn btn-primary"
               rel="noopener noreferrer"
-              href={homepageData.banner.button_primary.link}
+              href={withBasePath(`${homepageData.banner.button_primary.link}`)}
             >
               {homepageData.banner.button_primary.label} 
             </a>
             <a
               class="btn btn-outline"
               rel="noopener noreferrer"
-              href={homepageData.banner.button_secondary.link}
+              href={withBasePath(`${homepageData.banner.button_secondary.link}`)}
             >
               {homepageData.banner.button_secondary.label}
             </a>
@@ -228,7 +229,7 @@ import { Icon } from 'astro-icon/components'
           <div class="section-container">
             <div class="section-intro centralize">
               <h2
-                class="title hasHighlight  "
+                class="title hasHighlight text-text "
                 set:html={markdownify(homepageData.main_features.title)}
               />
               <p class="subtitle">{homepageData.main_features.content}</p>
@@ -241,7 +242,7 @@ import { Icon } from 'astro-icon/components'
                     <div class="bg-body border border-border px-4 w-full py-2.5 rounded-full flex items-center justify-center relative z-10 gap-x-2">
                       
                       <Icon name="material-symbols:check" class="shrink-0 text-2xl text-green-600" />
-                      <span class="font-semibold text-white text-lg">
+                      <span class="font-semibold text-text text-lg">
                         {text}
                       </span>
                     </div>
@@ -253,7 +254,7 @@ import { Icon } from 'astro-icon/components'
                   .map((text: string) => (
                     <div class="bg-body border border-border px-4 w-full py-2.5 rounded-full flex items-center justify-center relative z-10 gap-x-2">
                        <Icon name="material-symbols:check" class="shrink-0 text-2xl text-green-600" />
-                      <span class="font-semibold text-white text-lg">
+                      <span class="font-semibold text-text text-lg">
                         {text}
                       </span>
                     </div>
@@ -274,7 +275,7 @@ import { Icon } from 'astro-icon/components'
           <div class="section-container">
             <div class="section-intro centralize">
               <h2
-                class="title hasHighlight  "
+                class="title hasHighlight  text-text"
                 set:html={markdownify(homepageData.value_props.title)}
               />
               <p class="subtitle">{homepageData.value_props.content}</p>
@@ -318,14 +319,14 @@ import { Icon } from 'astro-icon/components'
           <div class="section-container">
             <div class="section-intro centralize">
               <h2
-                class="title hasHighlight  "
+                class="title hasHighlight text-text"
                 set:html={markdownify(homepageData.testimonial_quote.title)}
               />
             </div>
             <div class="section-content">
               <hr class="h-px bg-linear-to-r from-transparent from-5% via-white/40 to-95% to-transparent border-0" />
               <div class="relative max-w-220 mx-auto">
-                <blockquote class="text-center text-h6 text-white p-6 xl:p-10 xl:px-15 border-x border-text/20">
+                <blockquote class="text-center text-h6 text-text p-6 xl:p-10 xl:px-15 border-x border-text/20">
                   "{homepageData.testimonial_quote.quote}"
                 </blockquote>
                 <div class="size-2 bg-white absolute left-0 top-0 -translate-x-1/2 -translate-y-1/2" />
@@ -357,7 +358,7 @@ import { Icon } from 'astro-icon/components'
                     {homepageData.single_testimonial.stats.map(
                       (stat: any, i: number) => (
                         <div
-                          class={`blob-message relative z-${i + 1} ${i === 1 ? "lg:w-10/12" : ""}`}
+                          class={`blob-message relative text-text-dark z-${i + 1} ${i === 1 ? "lg:w-10/12" : ""}`}
                         >
                           <span class="font-semibold text-white">
                             {stat.value}
@@ -451,7 +452,7 @@ import { Icon } from 'astro-icon/components'
               {homepageData.growth_process.button.enable && (
                 <div class="flex justify-center mt-10 xl:mt-18">
                   <a
-                    href={homepageData.growth_process.button.link}
+                    href={withBasePath(`${homepageData.growth_process.button.link}`)}
                     class="btn btn-primary"
                   >
                     {homepageData.growth_process.button.label}
@@ -509,7 +510,7 @@ import { Icon } from 'astro-icon/components'
           <div class="section-container">
             <div class="section-intro centralize">
               <h2
-                class="title hasHighlight  "
+                class="title hasHighlight "
                 set:html={markdownify(homepageData.integrations.title)}
               />
             </div>
@@ -542,14 +543,14 @@ import { Icon } from 'astro-icon/components'
     )
   }
 
-  {
+  <!-- {
     homepageData.pricing.enable && (
       <PricingSection
         title={homepageData.pricing.title}
         content={homepageData.pricing.content}
       />
     )
-  }
+  } -->
 
   <Testimonial />
 

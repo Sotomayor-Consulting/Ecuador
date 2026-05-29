@@ -174,7 +174,7 @@
 /* content style */
 .content {
   @apply prose max-w-none;
-  @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em] prose-headings:text-white;
+  @apply prose-headings:mb-[.3em] prose-headings:mt-[.6em] prose-headings:text-text;
   @apply prose-h1:text-h1-sm md:prose-h1:text-h1;
   @apply prose-h2:text-h2-sm md:prose-h2:text-h2;
   @apply prose-h3:text-h3-sm md:prose-h3:text-h3;
@@ -185,7 +185,7 @@
   @apply prose-hr:border-border;
   @apply prose-pre:rounded-lg prose-pre:bg-dark;
   @apply prose-li:text-text;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text-dark;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-white/50 prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text-dark;
   @apply prose-table:relative prose-table:overflow-hidden prose-table:rounded-lg prose-table:before:absolute prose-table:before:left-0 prose-table:before:top-0 prose-table:before:h-full prose-table:before:w-full prose-table:before:rounded-[inherit] prose-table:before:border prose-table:before:border-border prose-table:before:content-[""];
   @apply prose-thead:border-border prose-thead:bg-light;
   @apply prose-th:relative prose-th:z-10 prose-th:px-4 prose-th:py-[18px] prose-th:text-text;
@@ -197,14 +197,8 @@
 .feature-items-group {
   @apply relative flex items-center flex-wrap xl:flex-nowrap justify-between gap-x-18 gap-y-8 isolate;
 }
-.feature-items-group::before {
-  content: "";
-  @apply absolute left-0 top-1/2 h-[1px] w-full bg-white/40 z-0;
-}
-.feature-items-group::after {
-  content: "";
-  @apply absolute left-0 top-1/2 h-[1px] w-full bg-border/70 z-0;
-}
+
+
 .feature-items-group > * {
   @apply relative z-10 bg-white;
 }
@@ -249,7 +243,7 @@ ul.green-tick-list {
 }
 
 .blob-message {
-  @apply bg-light/60 backdrop-blur-3xl py-13 rounded-t-full rounded-b-full text-center mx-auto px-20 border border-border -mb-5 text-h6 text-text-light;
+  @apply bg-dark/60 backdrop-blur-3xl py-13 rounded-t-full rounded-b-full text-center mx-auto px-20 border border-border -mb-5 text-h6 text-text-light;
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
 }
 

@@ -37,7 +37,7 @@ const latestPosts = allPosts.filter((p) => p.id !== featuredPost.id);
       </div>
       <div class="lg:max-w-4xl mx-auto text-center relative z-10">
         <h1
-          class="hasHighlight mb-0"
+          class="hasHighlight mb-0 text-text"
           set:html={markdownify(pageData.page_header?.title ?? pageData.title)}
         />
       </div>
@@ -92,7 +92,7 @@ const latestPosts = allPosts.filter((p) => p.id !== featuredPost.id);
       <section class="section pt-10 lg:pt-14">
         <div class="container relative isolate">
           <div class="mb-12 text-center">
-            <h2 class="text-h3-sm md:text-h2 capitalize">
+            <h2 class="text-h3-sm md:text-h2 capitalize text-text">
               {pageData.latest_posts?.title ?? "Latest Content From Us"}
             </h2>
           </div>

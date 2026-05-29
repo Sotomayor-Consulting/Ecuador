@@ -78,7 +78,7 @@ const studyData = study.data;
                   class="text-3xl text-white"
                 />
               </div>
-              <p class="text-text text-sm mb-1">{item.label}</p>
+              <p class="text-text-dark/80 text-sm mb-1">{item.label}</p>
               <p class="text-white font-semibold">{item.value}</p>
             </div>
           ))
@@ -99,7 +99,9 @@ const studyData = study.data;
           />
         </div>
         <div>
-          <h2 class="text-h3 lg:text-h2 mb-6">{studyData?.overview?.title}</h2>
+          <h2 class="text-h3 lg:text-h2 mb-6 text-text">
+            {studyData?.overview?.title}
+          </h2>
           <div
             class="text-text space-y-4"
             set:html={markdownify(studyData?.overview?.content ?? "", true)}
@@ -115,7 +117,7 @@ const studyData = study.data;
       <div class="container">
         <div class="grid lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 class="text-h3 lg:text-h2 mb-6">
+            <h2 class="text-h3 lg:text-h2 mb-6 text-text">
               {studyData?.challenges?.title}
             </h2>
             <div
@@ -160,7 +162,7 @@ const studyData = study.data;
       <div class="container">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div class="order-2 lg:order-1">
-            <h2 class="text-h3 lg:text-h2 mb-6">
+            <h2 class="text-h3 lg:text-h2 mb-6 text-text">
               {studyData?.solution?.title}
             </h2>
             <p class="text-text mb-6">{studyData?.solution?.content}</p>
@@ -206,7 +208,9 @@ const studyData = study.data;
       <div class="container">
         <div class="grid lg:grid-cols-2 gap-12 items-start mb-16">
           <div>
-            <h2 class="text-h3 lg:text-h2 mb-6">{studyData?.results?.title}</h2>
+            <h2 class="text-h3 lg:text-h2 mb-6 text-text">
+              {studyData?.results?.title}
+            </h2>
             <div
               class="text-text space-y-4"
               set:html={markdownify(studyData?.results?.content ?? "", true)}
@@ -221,7 +225,7 @@ const studyData = study.data;
                 <div class="text-h2 leading-none font-bold font-secondary text-white mb-2">
                   {metric.value}
                 </div>
-                <p class="text-text">{metric.label}</p>
+                <p class="text-text-dark">{metric.label}</p>
               </div>
             ))
           }
@@ -233,7 +237,13 @@ const studyData = study.data;
   <!-- Back to Case Studies link -->
   <section class="section-sm">
     <div class="container text-center flex justify-center">
-      <a href="/services" class="btn btn-outline flex items-center justify-center gap-2 w-fit"> <Icon name="material-symbols:arrow-left-alt" class="text-white" /> Regresar a servicios </a>
+      <a
+        href="/services"
+        class="btn btn-outline flex items-center justify-center gap-2 w-fit"
+      >
+        <Icon name="material-symbols:arrow-left-alt" class="" /> Regresar
+        a servicios
+      </a>
     </div>
   </section>
 

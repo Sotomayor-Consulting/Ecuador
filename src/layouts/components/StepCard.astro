@@ -15,7 +15,7 @@ const { image, number, title, content } = Astro.props;
     <ImageMod
       src={image}
       alt={`${title} icon`}
-      class="max-h-28 max-lg:order-1"
+      class="max-h-28 max-lg:order-1 invert"
       height={142}
       width={142}
     />
@@ -25,7 +25,7 @@ const { image, number, title, content } = Astro.props;
       >
         {number}
       </div>
-      <h3 class="text-h5-sm font-bold absolute uppercase">{title}</h3>
+      <h3 class="text-h5-sm font-bold absolute uppercase text-text">{title}</h3>
     </div>
     <p class="lg:col-4 text-sm max-lg:my-8 max-lg:order-3">{content}</p>
   </div>

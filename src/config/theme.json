@@ -11,9 +11,9 @@
         "dark": "#040404"
       },
       "text_color": {
-        "text": "#DAD4DE",
-        "text_dark": "#817E84",
-        "text_light": "#E5E5E5"
+        "text": "#0d2536",
+        "text_dark": "#ffffff",
+        "text_light": "#000000"
       }
     }
   },

@@ -4,6 +4,7 @@ import CallToAction from "@/layouts/components/CallToAction.astro";
 import CaseStudyCard from "@/layouts/components/CaseStudyCard.astro";
 import { getListPage, getSinglePage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import { withBasePath } from "@/lib/utils/url";
 import Testimonial from "@/partials/Testimonial.astro";
 import type { CaseStudy } from "@/types";
 
@@ -52,7 +53,7 @@ const caseStudies = await getSinglePage("caseStudy");
         {
           caseStudies.map((study) => (
             <CaseStudyCard
-              href={`/services/${study.id}`}
+              href={withBasePath(`/services/${study.id}`)}
               image={study.data.image!}
               logo={study.data.logo!}
               company={study.data.company!}

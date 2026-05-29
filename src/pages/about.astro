@@ -203,7 +203,7 @@ const aboutData: About = about.data;
           <div class="grid grid-cols-2 lg:grid-cols-4 gap-2">
             {aboutData.stats.items.map((stat: any) => (
               <div class="text-center p-8 lg:p-10 lg:py-26 rounded-2xl bg-primary/10">
-                <div class="text-h2 lg:text-h1 leading-none font-bold font-secondary text-white mb-4">
+                <div class="text-h2 lg:text-h1 leading-none font-bold font-secondary text-primary mb-4">
                   {stat.value}
                 </div>
                 <p class="text-text text-h6">{stat.label}</p>
@@ -230,7 +230,7 @@ const aboutData: About = about.data;
             <div class="section-intro centralize">
               <Badge title={aboutData.our_team.badge} />
               <h2
-                class="title hasHighlight"
+                class="title hasHighlight text-text"
                 set:html={markdownify(aboutData.our_team.title)}
               />
             </div>

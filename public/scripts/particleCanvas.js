@@ -11,7 +11,7 @@ export function sporeCanvas(
   particleWobble = 0,
   canvasSize = 2000,
 ) {
-  const particleColors = ["#FFFFFF"];
+  const particleColors = ["#255279"];
   // Reduce particle count on mobile devices
   if (window.innerWidth < 768) {
     particleCount = particleCount > 40 ? 20 : particleCount;

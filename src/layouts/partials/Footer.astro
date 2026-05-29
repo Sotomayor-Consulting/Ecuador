@@ -27,17 +27,17 @@ const { main: socialLinks } = social as SocialType;
         <Logo link={base_url || "/"} />
         <p class="mt-6">{config.params.footer_tagline}</p>
         <a
-          class="link mt-6 inline-block underline"
+          class="link mt-6 inline-block underline text-text"
           href={`mailto:${config.params.footer_email}`}
           >{config.params.footer_email}</a
         >
-        <a class="link mt-4 block" href={`tel:${config.params.footer_phone}`}
+        <a class="link mt-4 block text-text" href={`tel:${config.params.footer_phone}`}
           >{config.params.footer_phone}</a
         >
       </div>
       <!-- Column 2 - Primary -->
       <div>
-        <h3 class="footer-label">{footer_col_1_title}</h3>
+        <h3 class="footer-label text-text">{footer_col_1_title}</h3>
         <ul>
           {
             footer_primary?.map((item) => (
@@ -52,7 +52,7 @@ const { main: socialLinks } = social as SocialType;
       </div>
       <!-- Column 3 - Resource -->
       <div>
-        <h3 class="footer-label">{footer_col_2_title}</h3>
+        <h3 class="footer-label text-text">{footer_col_2_title}</h3>
         <ul>
           {
             footer_resource?.map((item) => (
@@ -67,7 +67,7 @@ const { main: socialLinks } = social as SocialType;
       </div>
       <!-- Column 4 - Legal -->
       <div>
-        <h3 class="footer-label">{footer_col_3_title}</h3>
+        <h3 class="footer-label text-text">{footer_col_3_title}</h3>
         <ul>
           {
             footer_legal?.map((item) => (

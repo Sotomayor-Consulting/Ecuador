@@ -32,7 +32,7 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
     <div class="container">
       <div class="mx-auto max-w-246.25 text-center">
         <h1
-          class="hasHighlight mb-8 text-h4-sm md:text-h1 leading-[1.1]"
+          class="hasHighlight mb-8 text-h4-sm md:text-h1 leading-[1.1] text-text"
           set:html={markdownify(postData.title)}
         />
 
@@ -67,7 +67,7 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
           {
             postData.read_time && (
               <span class="inline-flex items-center gap-2">
-                <i class="fa-regular fa-clock text-xs" aria-hidden="true" />
+                <i class="fa-regular fa-clock text-xs text-text" aria-hidden="true" />
                 {postData.read_time}
               </span>
             )
@@ -106,7 +106,7 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
 
         <!-- Share -->
         <div class="flex flex-wrap items-center gap-6 md:gap-8">
-          <h4 class="text-h5 md:text-h4 mb-0">Share:</h4>
+          <h4 class="text-h5 md:text-h4 mb-0 text-text">Comparte:</h4>
           <Share
             className="social-icons"
             slug={post.id}
@@ -124,7 +124,7 @@ const relatedPosts = allPosts.filter((p) => p.id !== post.id).slice(0, 3);
       <section class="section pb-34">
         <div class="container relative isolate">
           <div class="mb-12 text-center">
-            <h2 class="text-h3-sm md:text-h2 capitalize">Read More Articles</h2>
+            <h2 class="text-h3-sm md:text-h2 capitalize text-text">Read More Articles</h2>
           </div>
 
           <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">

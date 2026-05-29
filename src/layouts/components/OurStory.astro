@@ -2,6 +2,7 @@
 import ImageMod from "@/layouts/components/ImageMod.astro";
 import { getListPage } from "@/lib/contentParser.astro";
 import type { OurStorySection } from "@/types";
+import { withBasePath } from "@/lib/utils/url";
 
 const ourStoryEntry = await getListPage("ourStorySection", "our-story");
 const ourStoryData: OurStorySection = ourStoryEntry.data;
@@ -13,7 +14,7 @@ if (!ourStoryData.enable) return;
     <div class="section-container">
       <div class="section-intro centralize">
         <h2
-          class="title hasHighlight lg:col-8 mx-auto"
+          class="title hasHighlight lg:col-8 mx-auto text-text"
           set:html={ourStoryData.title}
         />
       </div>
@@ -34,12 +35,12 @@ if (!ourStoryData.enable) return;
                   src={ourStoryData.ceo.image}
                   alt={ourStoryData.ceo.name}
                 />
-                <p class="text-white font-semibold">
+                <p class="text-text font-semibold">
                   {ourStoryData.ceo.name}
                 </p>
-                <p class="text-text-dark text-sm">{ourStoryData.ceo.role}</p>
+                <p class="text-text text-sm">{ourStoryData.ceo.role}</p>
               </div>
-              <div class="text-h6 mt-12 mb-17 text-left mx-auto">
+              <div class="text-h6 mt-12 mb-17 text-left mx-auto ">
                 <div set:html={ourStoryData.letter} />
               </div>
 
@@ -47,14 +48,14 @@ if (!ourStoryData.enable) return;
                 ourStoryData.letter_points &&
                   ourStoryData.letter_points.length > 0 && (
                     <>
-                      <div class="text-h6 text-white font-semibold text-center mb-7">
+                      <div class="text-h6 text-text font-semibold text-center mb-7">
                         {ourStoryData.letter_points_title ??
                           "Here's how we do it:"}
                       </div>
                       <div class="flex flex-col gap-y-7 relative vertical-bg-line ">
                         {ourStoryData.letter_points.map((point) => (
                           <div class="bg-linear-to-tl from-border to-body border border-border px-8 w-full py-2.5 rounded-full flex items-center justify-center relative z-10 gap-x-2">
-                            <span class="font-semibold text-white text-lg">
+                            <span class="font-semibold text-text text-lg">
                               {point}
                             </span>
                           </div>
@@ -66,7 +67,7 @@ if (!ourStoryData.enable) return;
 
               {
                 ourStoryData.closing_content && (
-                  <p class="mt-15 text-h6">{ourStoryData.closing_content}</p>
+                  <p class="mt-15 text-h6 text-text">{ourStoryData.closing_content}</p>
                 )
               }
 
@@ -76,7 +77,7 @@ if (!ourStoryData.enable) return;
                   ourStoryData.button.link && (
                     <div class="mt-12 flex justify-center">
                       <a
-                        href={ourStoryData.button.link}
+                        href={withBasePath(`${ourStoryData.button.link}`)}
                         class="btn btn-primary py-4"
                       >
                         {ourStoryData.button.label}

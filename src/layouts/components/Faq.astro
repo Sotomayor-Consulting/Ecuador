@@ -2,6 +2,7 @@
 import Accordion from "./Accordion.astro";
 import { getListPage } from "@/lib/contentParser.astro";
 import type { FaqSection } from "@/types";
+import { withBasePath } from "@/lib/utils/url";
 
 const faqEntry = await getListPage("faqSection", "faq");
 const faqData: FaqSection = faqEntry.data;
@@ -13,11 +14,11 @@ if (!faqData.enable) return;
     <div class="section-container grid lg:grid-cols-2">
       <div class="section-intro max-lg:text-center">
         <div class="sticky top-(--header-height)">
-          <h2 class="title lg:ml-0" set:html={faqData.title} />
+          <h2 class="title lg:ml-0 text-text" set:html={faqData.title} />
           <p class="subtitle lg:ml-0">{faqData.description}</p>
           {
             faqData.button && faqData.button.enable && faqData.button.link && (
-              <a href={faqData.button.link} class="btn btn-outline mt-9">
+              <a href={withBasePath(`${faqData.button.link}`)} class="btn btn-outline mt-9">
                 {faqData.button.label}
               </a>
             )
