@@ -243,7 +243,7 @@ ul.green-tick-list {
 }
 
 .blob-message {
-  @apply bg-dark/60 backdrop-blur-3xl py-13 rounded-t-full rounded-b-full text-center mx-auto px-20 border border-border -mb-5 text-h6 text-text-light;
+  @apply bg-transparent backdrop-blur-3xl py-13 rounded-t-full rounded-b-full text-center mx-auto px-20 border border-primary -mb-5 text-h6 text-text;
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
 }
 

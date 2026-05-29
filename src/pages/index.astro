@@ -24,7 +24,7 @@ const homepage = await getListPage("homepage", "-index");
 const homepageData: Homepage = homepage.data;
 
 const { checklist_form_action } = config.params;
-import { Icon } from 'astro-icon/components'
+import { Icon } from "astro-icon/components";
 ---
 
 <Base>
@@ -49,12 +49,14 @@ import { Icon } from 'astro-icon/components'
               rel="noopener noreferrer"
               href={withBasePath(`${homepageData.banner.button_primary.link}`)}
             >
-              {homepageData.banner.button_primary.label} 
+              {homepageData.banner.button_primary.label}
             </a>
             <a
               class="btn btn-outline"
               rel="noopener noreferrer"
-              href={withBasePath(`${homepageData.banner.button_secondary.link}`)}
+              href={withBasePath(
+                `${homepageData.banner.button_secondary.link}`,
+              )}
             >
               {homepageData.banner.button_secondary.label}
             </a>
@@ -240,8 +242,10 @@ import { Icon } from 'astro-icon/components'
                   .slice(0, 3)
                   .map((text: string) => (
                     <div class="bg-body border border-border px-4 w-full py-2.5 rounded-full flex items-center justify-center relative z-10 gap-x-2">
-                      
-                      <Icon name="material-symbols:check" class="shrink-0 text-2xl text-green-600" />
+                      <Icon
+                        name="material-symbols:check"
+                        class="shrink-0 text-2xl text-green-600"
+                      />
                       <span class="font-semibold text-text text-lg">
                         {text}
                       </span>
@@ -253,7 +257,10 @@ import { Icon } from 'astro-icon/components'
                   .slice(3)
                   .map((text: string) => (
                     <div class="bg-body border border-border px-4 w-full py-2.5 rounded-full flex items-center justify-center relative z-10 gap-x-2">
-                       <Icon name="material-symbols:check" class="shrink-0 text-2xl text-green-600" />
+                      <Icon
+                        name="material-symbols:check"
+                        class="shrink-0 text-2xl text-green-600"
+                      />
                       <span class="font-semibold text-text text-lg">
                         {text}
                       </span>
@@ -358,9 +365,9 @@ import { Icon } from 'astro-icon/components'
                     {homepageData.single_testimonial.stats.map(
                       (stat: any, i: number) => (
                         <div
-                          class={`blob-message relative text-text-dark z-${i + 1} ${i === 1 ? "lg:w-10/12" : ""}`}
+                          class={`blob-message relative text-text z-${i + 1} ${i === 1 ? "lg:w-10/12" : ""}`}
                         >
-                          <span class="font-semibold text-white">
+                          <span class="font-semibold text-text">
                             {stat.value}
                           </span>{" "}
                           {stat.label}
@@ -430,7 +437,7 @@ import { Icon } from 'astro-icon/components'
   <!-- Growth Process -->
   {
     homepageData.growth_process.enable && (
-      <section class="section-box max-lg:overflow-hidden pb-16 xl:pb-19 bg-transparent relative isolate overflow-hidden">
+      <section class="section-box max-lg:overflow-hidden pb-16 xl:pb-19 relative isolate overflow-hidden bg-black rounded-4xl!">
         <div class="container">
           <div class="section-container">
             <div class="section-intro centralize">
@@ -452,7 +459,9 @@ import { Icon } from 'astro-icon/components'
               {homepageData.growth_process.button.enable && (
                 <div class="flex justify-center mt-10 xl:mt-18">
                   <a
-                    href={withBasePath(`${homepageData.growth_process.button.link}`)}
+                    href={withBasePath(
+                      `${homepageData.growth_process.button.link}`,
+                    )}
                     class="btn btn-primary"
                   >
                     {homepageData.growth_process.button.label}
@@ -462,36 +471,7 @@ import { Icon } from 'astro-icon/components'
             </div>
           </div>
         </div>
-        <div class="absolute inset-x-0 top-0 -z-10">
-          <svg
-            class="w-full"
-            viewBox="0 0 1920 1099"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M960 1.5C1224.88 1.5 1464.62 62.943 1638.08 162.205C1811.58 261.491 1918.5 398.425 1918.5 549.356C1918.5 700.287 1811.58 837.222 1638.08 936.508C1464.62 1035.77 1224.88 1097.21 960 1097.21C695.116 1097.21 455.383 1035.77 281.923 936.508C108.42 837.222 1.50012 700.287 1.5 549.356C1.5 398.425 108.42 261.491 281.923 162.205C455.383 62.943 695.116 1.5 960 1.5Z"
-              fill="black"
-              stroke="url(#paint0_linear_proc)"
-              stroke-width="3"
-            />
-            <defs>
-              <linearGradient
-                id="paint0_linear_proc"
-                x1="960"
-                y1="0"
-                x2="960"
-                y2="84.3521"
-                gradientUnits="userSpaceOnUse"
-              >
-                <>
-                  <stop stop-color="var(--color-primary-light)" />
-                  <stop offset="1" stop-color="var(--color-body)" />
-                </>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
+        
         <div class="absolute inset-0 grid place-items-center size-full -z-10">
           <div class="size-225 bg-radial from-primary-light/30 to-transparent from-0% to-70% rounded-full" />
         </div>
@@ -503,7 +483,7 @@ import { Icon } from 'astro-icon/components'
   <!-- <OurStory /> -->
 
   <!-- Integrations -->
-  {
+  <!-- {
     homepageData.integrations.enable && (
       <section class="section relative isolate max-md:overflow-hidden">
         <div class="container-sm">
@@ -534,7 +514,7 @@ import { Icon } from 'astro-icon/components'
         </div>
       </section>
     )
-  }
+  } -->
 
   <!-- Lead Generation -->
   {
